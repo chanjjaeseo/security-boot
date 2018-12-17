@@ -6,7 +6,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class FormAuthenticationConfig {
 
     @Autowired
