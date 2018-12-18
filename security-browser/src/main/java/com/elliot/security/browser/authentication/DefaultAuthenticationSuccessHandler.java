@@ -1,4 +1,4 @@
-package com.elliot.security.core.authentication;
+package com.elliot.security.browser.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
