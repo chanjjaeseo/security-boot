@@ -10,10 +10,11 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
-//@Configuration
-//@EnableResourceServer
-public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
+@Configuration
+@EnableResourceServer
+public class ResourceServerConfig {
 
+    //extends ResourceServerConfigurerAdapter
 //    @Autowired
 //    private FormAuthenticationConfig formAuthenticationConfig;
 
@@ -23,8 +24,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 //    @Autowired
 //    private AuthenticationFailureHandler defaultAuthenticationFailureHandler;
 
-    @Override
-    public void configure(HttpSecurity http) throws Exception {
+//    @Override
+//    public void configure(HttpSecurity http) throws Exception {
 
 //        http
 //                .formLogin()
@@ -41,12 +42,12 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 //                    .authenticated()
 //                .and()
 //                    .csrf().disable();
-        http
-                .authorizeRequests()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                .loginPage("/signIn.html")
-                .loginProcessingUrl("/login/process");
-    }
+//        http
+//                .authorizeRequests()
+//                .anyRequest().authenticated()
+//                .and()
+//                .formLogin()
+//                .loginPage("/signIn.html")
+//                .loginProcessingUrl("/login/process");
+//    }
 }
