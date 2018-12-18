@@ -12,10 +12,6 @@
     <artifactId>security-demo</artifactId>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>org.apache.httpcomponents</groupId>-->
-            <!--<artifactId>httpclient</artifactId>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -26,9 +22,14 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.7.0</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.elliot</groupId>-->
+            <!--<artifactId>security-app</artifactId>-->
+            <!--<version>${security.boot.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.elliot</groupId>
-            <artifactId>security-app</artifactId>
+            <artifactId>security-browser</artifactId>
             <version>${security.boot.version}</version>
         </dependency>
     </dependencies>
