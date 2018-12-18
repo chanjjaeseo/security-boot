@@ -20,3 +20,11 @@ security:
 management:
   security:
     enabled: false
+
+boot:
+  browser:
+    token-validity-seconds: 72000
+  code:
+
+#  app:
+

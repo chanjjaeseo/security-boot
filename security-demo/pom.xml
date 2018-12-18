@@ -32,6 +32,10 @@
             <artifactId>security-browser</artifactId>
             <version>${security.boot.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
