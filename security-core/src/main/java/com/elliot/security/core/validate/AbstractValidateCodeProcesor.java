@@ -22,9 +22,9 @@ public abstract class AbstractValidateCodeProcesor implements ValidateCodeProces
         send(request, response, code);
     }
 
-    abstract ValidateCode generate();
+    protected abstract ValidateCode generate();
 
-    abstract void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode);
+    protected abstract void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode);
 
     public void save(ValidateCode validateCode, HttpServletRequest request) {
         String sessionName = getSessionName();

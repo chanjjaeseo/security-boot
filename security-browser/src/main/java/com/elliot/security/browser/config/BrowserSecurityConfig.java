@@ -1,7 +1,9 @@
 package com.elliot.security.browser.config;
 
+import com.elliot.security.core.config.ValidateCodeAuthenticationConfig;
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.config.FormAuthenticationConfig;
+import com.elliot.security.core.constant.SecurityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -24,15 +26,34 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private SecurityBootBean securityBootBean;
 
+    @Autowired
+    private ValidateCodeAuthenticationConfig validateCodeAuthenticationConfig;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         formAuthenticationConfig.configure(http);
+
+        // validate code authentication
+        http.apply(validateCodeAuthenticationConfig);
 
         // remember me
         http.rememberMe()
                 .tokenRepository(jdbcTokenRepository)
                 .tokenValiditySeconds(securityBootBean.getBrowser().getTokenValiditySeconds())
                 .userDetailsService(userDetailsService);
+
+        // url resources protected
+        http.authorizeRequests()
+            .antMatchers(
+                    SecurityConstant.FormLogin.LOGIN_PAGE_URL,
+                    SecurityConstant.FormLogin.LOGIN_PROCESS_URL,
+                    SecurityConstant.ValidateCode.VALIDATE_CODE_URL_PREFIX)
+            .permitAll()
+            .anyRequest()
+            .authenticated();
+
+        // csrf
+        http.csrf().disable();
     }
 
 

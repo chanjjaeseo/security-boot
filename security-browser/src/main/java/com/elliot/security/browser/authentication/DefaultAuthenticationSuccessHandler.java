@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Component("defaultAuthenticationSuccessHandler")
+@Component
 public class DefaultAuthenticationSuccessHandler implements AuthenticationSuccessHandler{
 
     @Autowired

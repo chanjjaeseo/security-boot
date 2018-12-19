@@ -1,7 +1,10 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.validate.sms;
 
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.exception.ValidateException;
+import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
+import com.elliot.security.core.validate.AbstractValidateCodeProcesor;
+import com.elliot.security.core.validate.ValidateCode;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Component("smsValidateCodeProcessor")
-public class SMSValidateCodeProcesor extends AbstractValidateCodeProcesor {
+public class SMSValidateCodeProcessor extends AbstractValidateCodeProcesor {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -23,12 +26,12 @@ public class SMSValidateCodeProcesor extends AbstractValidateCodeProcesor {
     private SMSCodeGenerator smsCodeGenerator = new SMSCodeGenerator();
 
     @Override
-    ValidateCode generate() {
+    protected ValidateCode generate() {
         return smsCodeGenerator.generate();
     }
 
     @Override
-    void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode) {
+    protected void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode) {
         String phoneParameter = securityBootBean.getCode().getSms().getPhoneParameter();
         String phoneNum = null;
         try {

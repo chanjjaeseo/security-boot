@@ -1,6 +1,8 @@
 package com.elliot.security.core.exception;
 
-public class ValidateException extends RuntimeException {
+import org.springframework.security.core.AuthenticationException;
+
+public class ValidateException extends AuthenticationException {
 
     public ValidateException(String exDesc) {
         super(exDesc);

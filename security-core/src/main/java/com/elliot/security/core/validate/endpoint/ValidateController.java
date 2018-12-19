@@ -1,5 +1,7 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.validate.endpoint;
 
+import com.elliot.security.core.constant.ValidateCode;
+import com.elliot.security.core.validate.ValidateCodeProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,10 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 public class ValidateController {
 
-    private final static String SMS_CODE = "sms";
-
-    private final static String IMAGE_CODE = "image";
-
     @Autowired
     private ValidateCodeProcessor imageValidateCodeProcessor;
 
@@ -23,9 +21,9 @@ public class ValidateController {
 
     @GetMapping("/code/{type}")
     public void smsValidateCode(@PathVariable String type, HttpServletRequest request, HttpServletResponse response) {
-        if (type.equals(SMS_CODE)) {
+        if (type.equals(ValidateCode.SMS.getUrlSuffix())) {
             smsValidateCodeProcessor.create(request, response);
-        } else if (type.equals(IMAGE_CODE)) {
+        } else if (type.equals(ValidateCode.IMAGE.getUrlSuffix())) {
             imageValidateCodeProcessor.create(request, response);
         }
     }

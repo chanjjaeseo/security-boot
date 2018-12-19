@@ -1,7 +1,8 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.validate.sms;
+
+import com.elliot.security.core.validate.ValidateCode;
 
 import java.awt.image.BufferedImage;
-import java.util.Random;
 
 public class ImageValidateCode extends ValidateCode {
 

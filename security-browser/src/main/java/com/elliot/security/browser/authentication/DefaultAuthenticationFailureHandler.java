@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Component("defaultAuthenticationFailureHandler")
-public class DefaultAuthenticationFailureHandler implements AuthenticationFailureHandler{
+@Component
+public class DefaultAuthenticationFailureHandler implements AuthenticationFailureHandler {
 
     @Autowired
     private ObjectMapper objectMapper;

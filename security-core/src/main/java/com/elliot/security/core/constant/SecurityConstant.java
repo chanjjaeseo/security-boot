@@ -8,7 +8,11 @@ public interface SecurityConstant {
 
         String LOGIN_PROCESS_URL = "/login/process";
 
-        String VALIDATE_CODE_URL = "/code/*";
+    }
+
+    public interface ValidateCode {
+
+        String VALIDATE_CODE_URL_PREFIX = "/code";
 
     }
 

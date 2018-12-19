@@ -19,21 +19,10 @@ public class FormAuthenticationConfig {
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .formLogin()
-                    .loginPage("/signIn.html")
-                    .loginProcessingUrl("/login/process")
-                    .successHandler(defaultAuthenticationSuccessHandler)
-                    .failureHandler(defaultAuthenticationFailureHandler)
-                .and()
-                .authorizeRequests()
-                    .antMatchers(
-                            SecurityConstant.FormLogin.LOGIN_PAGE_URL,
-                            SecurityConstant.FormLogin.LOGIN_PROCESS_URL,
-                            SecurityConstant.FormLogin.VALIDATE_CODE_URL)
-                    .permitAll()
-                    .anyRequest()
-                    .authenticated()
-                .and()
-                    .csrf().disable();
+                .loginPage("/signIn.html")
+                .loginProcessingUrl("/login/process")
+                .successHandler(defaultAuthenticationSuccessHandler)
+                .failureHandler(defaultAuthenticationFailureHandler);
 
     }
 

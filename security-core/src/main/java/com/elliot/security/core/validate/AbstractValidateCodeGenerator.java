@@ -20,6 +20,6 @@ public abstract class AbstractValidateCodeGenerator{
         return buffer.toString();
     }
 
-    abstract ValidateCode generate();
+    protected abstract ValidateCode generate();
 
 }

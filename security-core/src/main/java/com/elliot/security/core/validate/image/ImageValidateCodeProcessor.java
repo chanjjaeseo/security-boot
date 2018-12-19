@@ -1,6 +1,10 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.validate.image;
 
 import com.elliot.security.core.config.bean.SecurityBootBean;
+import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
+import com.elliot.security.core.validate.AbstractValidateCodeProcesor;
+import com.elliot.security.core.validate.sms.ImageValidateCode;
+import com.elliot.security.core.validate.ValidateCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +18,7 @@ import java.awt.image.BufferedImage;
 import java.util.Random;
 
 @Component("imageValidateCodeProcessor")
-public class ImageValidateCodeProcessor extends AbstractValidateCodeProcesor{
+public class ImageValidateCodeProcessor extends AbstractValidateCodeProcesor {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -24,12 +28,12 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcesor{
     private ImageCodeGenetor imageCodeGenetor = new ImageCodeGenetor();
 
     @Override
-    ValidateCode generate() {
+    protected ValidateCode generate() {
         return imageCodeGenetor.generate();
     }
 
     @Override
-    void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode) {
+    protected void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode) {
         BufferedImage bufferedImage = ((ImageValidateCode)validateCode).getBufferedImage();
         try {
             ImageIO.write(bufferedImage, "JPEG", response.getOutputStream());
