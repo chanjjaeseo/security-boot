@@ -4,7 +4,17 @@ public class SMSCode {
 
     private int length = 6;
 
-    private int expiredMinutes;
+    private int expiredMinutes = 3;
+
+    private String phoneParameter = "phone-num";
+
+    public String getPhoneParameter() {
+        return phoneParameter;
+    }
+
+    public void setPhoneParameter(String phoneParameter) {
+        this.phoneParameter = phoneParameter;
+    }
 
     public int getLength() {
         return length;

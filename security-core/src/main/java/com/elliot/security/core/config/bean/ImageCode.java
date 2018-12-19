@@ -4,11 +4,11 @@ public class ImageCode {
 
     private int length = 4;
 
-    private int width = 120;
+    private int width = 70;
 
-    private int height = 50;
+    private int height = 25;
 
-    private int expiredMinutes;
+    private int expiredMinutes = 3;
 
     public int getLength() {
         return length;

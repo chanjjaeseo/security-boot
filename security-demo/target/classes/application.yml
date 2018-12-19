@@ -24,5 +24,4 @@ management:
 boot:
   browser:
     token-validity-seconds: 72000
-#  app:
 
