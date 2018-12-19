@@ -89,7 +89,7 @@ public abstract class AbstractValidateCodeProcessor implements ValidateCodeProce
         if (LocalDateTime.now().isAfter(codeInSession.getInvalidTime())) {
             throw new ValidateException("验证码已失效");
         }
-        if (codeInSession.getCode().equals(code)) {
+        if (!codeInSession.getCode().equals(code)) {
             throw new ValidateException("验证码不匹配");
         }
     }

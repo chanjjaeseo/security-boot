@@ -20,9 +20,9 @@ public class DefaultAuthenticationFailureHandler implements AuthenticationFailur
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
                                         AuthenticationException exception) throws IOException, ServletException {
-        String authention = objectMapper.writeValueAsString(exception.getCause());
+        String authentication = objectMapper.writeValueAsString(exception.getMessage());
         response.setContentType("application/json;charset=UTF-8");
-        response.getWriter().write(authention);
+        response.getWriter().write(authentication);
     }
 
 }

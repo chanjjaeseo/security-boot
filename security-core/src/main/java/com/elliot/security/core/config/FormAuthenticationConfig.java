@@ -19,8 +19,8 @@ public class FormAuthenticationConfig {
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .formLogin()
-                .loginPage("/signIn.html")
-                .loginProcessingUrl("/login/process")
+                .loginPage(SecurityConstant.FormLogin.LOGIN_PAGE_URL)
+                .loginProcessingUrl(SecurityConstant.FormLogin.LOGIN_PROCESS_URL)
                 .successHandler(defaultAuthenticationSuccessHandler)
                 .failureHandler(defaultAuthenticationFailureHandler);
 
