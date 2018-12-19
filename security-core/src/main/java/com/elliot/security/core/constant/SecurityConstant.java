@@ -2,15 +2,21 @@ package com.elliot.security.core.constant;
 
 public interface SecurityConstant {
 
-    public interface FormLogin {
+    interface FormLogin {
 
         String LOGIN_PAGE_URL = "/signIn.html";
 
-        String LOGIN_PROCESS_URL = "/login/process";
+        String LOGIN_PROCESS_URL = "/login/form";
 
     }
 
-    public interface ValidateCode {
+    interface MobileLogin {
+
+        String LOGIN_PROCESS_URL = "/login/sms";
+
+    }
+
+    interface ValidateCode {
 
         String VALIDATE_CODE_URL_PREFIX = "/code";
 

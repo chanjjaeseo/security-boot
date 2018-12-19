@@ -1,6 +1,6 @@
 package com.elliot.security.core.validate.endpoint;
 
-import com.elliot.security.core.constant.ValidateCode;
+import com.elliot.security.core.constant.ValidateCodeEnum;
 import com.elliot.security.core.validate.ValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCodeProcessorHolder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,9 +26,9 @@ public class ValidateController {
     }
 
     private ValidateCodeProcessor findValidateCodeProcessor(String type) {
-        for(ValidateCode validateCode : ValidateCode.values()) {
-            if(validateCode.getUrlSuffix().equals(type)) {
-                return validateCodeProcessorHolder.getProcessorByType(validateCode);
+        for(ValidateCodeEnum validateCodeEnum : ValidateCodeEnum.values()) {
+            if(validateCodeEnum.getType().equals(type)) {
+                return validateCodeProcessorHolder.getProcessorByType(validateCodeEnum);
             }
         }
         return null;

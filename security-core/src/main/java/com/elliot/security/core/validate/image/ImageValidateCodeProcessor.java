@@ -2,7 +2,7 @@ package com.elliot.security.core.validate.image;
 
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
-import com.elliot.security.core.validate.AbstractValidateCodeProcesor;
+import com.elliot.security.core.validate.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.sms.ImageValidateCode;
 import com.elliot.security.core.validate.ValidateCode;
 import org.slf4j.Logger;
@@ -18,9 +18,7 @@ import java.awt.image.BufferedImage;
 import java.util.Random;
 
 @Component("imageValidateCodeProcessor")
-public class ImageValidateCodeProcessor extends AbstractValidateCodeProcesor {
-
-    private Logger logger = LoggerFactory.getLogger(getClass());
+public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor {
 
     @Autowired
     private SecurityBootBean securityBootBean;

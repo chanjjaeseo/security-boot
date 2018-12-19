@@ -1,24 +1,24 @@
 package com.elliot.security.core.constant;
 
-public enum ValidateCode {
+public enum ValidateCodeEnum {
 
     SMS("sms-code", "sms"),
     IMAGE("image-code", "image");
 
     private String requestParameter;
 
-    private String urlSuffix;
+    private String type;
 
-    ValidateCode(String requestParameter, String urlSuffix) {
+    ValidateCodeEnum(String requestParameter, String type) {
         this.requestParameter = requestParameter;
-        this.urlSuffix = urlSuffix;
+        this.type = type;
     }
 
     public String getRequestParameter() {
         return requestParameter;
     }
 
-    public String getUrlSuffix() {
-        return urlSuffix;
+    public String getType() {
+        return type;
     }
 }

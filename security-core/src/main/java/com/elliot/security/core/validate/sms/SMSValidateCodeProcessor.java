@@ -3,7 +3,7 @@ package com.elliot.security.core.validate.sms;
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
-import com.elliot.security.core.validate.AbstractValidateCodeProcesor;
+import com.elliot.security.core.validate.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCode;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Component("smsValidateCodeProcessor")
-public class SMSValidateCodeProcessor extends AbstractValidateCodeProcesor {
+public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 

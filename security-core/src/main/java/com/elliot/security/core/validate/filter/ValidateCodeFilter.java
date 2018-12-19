@@ -1,9 +1,10 @@
 package com.elliot.security.core.validate.filter;
 
 import com.elliot.security.core.constant.SecurityConstant;
-import com.elliot.security.core.constant.ValidateCode;
+import com.elliot.security.core.constant.ValidateCodeEnum;
 import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.ValidateCodeProcessor;
+import com.elliot.security.core.validate.ValidateCodeProcessorHolder;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
@@ -16,9 +17,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @Component("validateCodeFilter")
-public class ValidateCodeFilter extends OncePerRequestFilter {
+public class ValidateCodeFilter extends OncePerRequestFilter implements InitializingBean {
 
     private AntPathMatcher antPathMatcher = new AntPathMatcher();
 
@@ -26,23 +29,23 @@ public class ValidateCodeFilter extends OncePerRequestFilter {
     private AuthenticationFailureHandler authenticationFailureHandler;
 
     @Autowired
-    private ValidateCodeProcessor imageValidateCodeProcessor;
+    private ValidateCodeProcessorHolder validateCodeProcessorHolder;
 
-    @Autowired
-    private ValidateCodeProcessor smsValidateCodeProcessor;
+    private Map<String, ValidateCodeEnum> urlMapping = new HashMap<>();
+
+    @Override
+    public void afterPropertiesSet() throws ServletException {
+        urlMapping.put(SecurityConstant.FormLogin.LOGIN_PROCESS_URL, ValidateCodeEnum.IMAGE);
+        urlMapping.put(SecurityConstant.MobileLogin.LOGIN_PROCESS_URL, ValidateCodeEnum.SMS);
+    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        ValidateCode validateCode = getValidateCode(request);
-        if (validateCode != null) {
+        ValidateCodeEnum validateCodeEnum = getValidateCode(request);
+        if (validateCodeEnum != null) {
             try {
-                if (validateCode == ValidateCode.IMAGE) {
-                    imageValidateCodeProcessor.validate(request);
-                } else if (validateCode == ValidateCode.SMS) {
-                    smsValidateCodeProcessor.validate(request);
-                } else {
-                    throw new ValidateException("不支持的验证方式");
-                }
+                ValidateCodeProcessor processor = validateCodeProcessorHolder.getProcessorByType(validateCodeEnum);
+                processor.validate(request);
             } catch (Exception e) {
                 authenticationFailureHandler.onAuthenticationFailure(request, response,
                         new ValidateException(e.getMessage()));
@@ -53,12 +56,13 @@ public class ValidateCodeFilter extends OncePerRequestFilter {
     }
 
 
-    private ValidateCode getValidateCode(HttpServletRequest request) {
-        for (ValidateCode validateCode: ValidateCode.values()) {
-            String validateCodeURL = SecurityConstant.FormLogin.VALIDATE_CODE_URL_PREFIX + validateCode.getUrlSuffix();
-            boolean match = antPathMatcher.match(validateCodeURL, request.getRequestURI());
+    private ValidateCodeEnum getValidateCode(HttpServletRequest request) {
+        String requestURI = request.getRequestURI();
+        for (Map.Entry<String, ValidateCodeEnum> urlEntry: urlMapping.entrySet()) {
+            String validateURL = urlEntry.getKey();
+            boolean match = antPathMatcher.match(validateURL, requestURI);
             if (match)
-                return validateCode;
+                return urlEntry.getValue();
         }
         return null;
     }

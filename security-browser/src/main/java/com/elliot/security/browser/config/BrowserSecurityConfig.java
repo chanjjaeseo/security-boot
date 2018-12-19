@@ -47,7 +47,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers(
                     SecurityConstant.FormLogin.LOGIN_PAGE_URL,
                     SecurityConstant.FormLogin.LOGIN_PROCESS_URL,
-                    SecurityConstant.ValidateCode.VALIDATE_CODE_URL_PREFIX)
+                    SecurityConstant.ValidateCode.VALIDATE_CODE_URL_PREFIX + "/*")
             .permitAll()
             .anyRequest()
             .authenticated();
