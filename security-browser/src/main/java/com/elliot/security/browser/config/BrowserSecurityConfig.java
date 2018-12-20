@@ -1,6 +1,7 @@
 package com.elliot.security.browser.config;
 
-import com.elliot.security.core.config.ValidateCodeAuthenticationConfig;
+import com.elliot.security.core.config.ImageCodeAuthenticationConfig;
+import com.elliot.security.core.config.SMSCodeAuthenticationConfig;
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.config.FormAuthenticationConfig;
 import com.elliot.security.core.constant.SecurityConstant;
@@ -27,14 +28,20 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
     private SecurityBootBean securityBootBean;
 
     @Autowired
-    private ValidateCodeAuthenticationConfig validateCodeAuthenticationConfig;
+    private ImageCodeAuthenticationConfig imageCodeAuthenticationConfig;
+
+    @Autowired
+    private SMSCodeAuthenticationConfig smsCodeAuthenticationConfig;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         formAuthenticationConfig.configure(http);
 
-        // validate code authentication
-        http.apply(validateCodeAuthenticationConfig);
+        // validate code authentication (form login)
+        http.apply(imageCodeAuthenticationConfig);
+
+        // sms code authentication
+        http.apply(smsCodeAuthenticationConfig);
 
         // remember me
         http.rememberMe()

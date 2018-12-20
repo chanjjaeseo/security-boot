@@ -50,7 +50,7 @@ public abstract class AbstractValidateCodeProcessor implements ValidateCodeProce
         extraCheck(request, codeInSession);
     }
 
-    protected abstract void extraCheck(HttpServletRequest request, ValidateCode validateCode);
+    protected abstract void extraCheck(HttpServletRequest request, ValidateCode codeInSession);
 
     protected String getValidateCodeFromRequest(HttpServletRequest request) {
         String requestName = getRequestParameter();

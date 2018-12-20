@@ -28,15 +28,11 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor impl
 
     private SMSCodeGenerator smsCodeGenerator = new SMSCodeGenerator();
 
-    private String phoneParameter;
-
-    private String sessionName;
-
     @Override
     public void afterPropertiesSet() {
         SMSCode smsCode = securityBootBean.getCode().getSms();
-        phoneParameter = smsCode.getPhoneParameter();
-        sessionName = smsCode.getSessionAttribute();
+        requestParameter = smsCode.getPhoneParameter();
+        sessionAttribute = smsCode.getSessionAttribute();
     }
 
     @Override
@@ -52,18 +48,9 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor impl
         }
     }
 
-    @Override
-    protected void extraCheck(HttpServletRequest request, ValidateCode validateCode) {
-        SMSValidateCode smsValidateCode = (SMSValidateCode) validateCode;
-        String mobileInRequest = getMobileNumber(request);
-        if (mobileInRequest == null || !mobileInRequest.equals(smsValidateCode.getMobile())) {
-            throw new ValidateException("验证失败:手机号错误");
-        }
-    }
-
     private String getMobileNumber(HttpServletRequest request) {
         try {
-            String phoneNum = ServletRequestUtils.getRequiredStringParameter(request, phoneParameter);
+            String phoneNum = ServletRequestUtils.getRequiredStringParameter(request, requestParameter);
             if (StringUtils.isNotBlank(phoneNum)) {
                 return phoneNum;
             }
@@ -81,9 +68,17 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor impl
     protected void save(HttpServletRequest request, ValidateCode validateCode) {
         String phoneNum = getMobileNumber(request);
         SMSValidateCode smsValidateCode = new SMSValidateCode(validateCode, phoneNum);
-        request.getSession().setAttribute(sessionName, smsValidateCode);
+        request.getSession().setAttribute(sessionAttribute, smsValidateCode);
     }
 
+    @Override
+    protected void extraCheck(HttpServletRequest request, ValidateCode codeInSession) {
+        SMSValidateCode smsValidateCode = (SMSValidateCode) codeInSession;
+        String mobileInRequest = getMobileNumber(request);
+        if (mobileInRequest == null || !mobileInRequest.equals(smsValidateCode.getMobile())) {
+            throw new ValidateException("验证失败:手机号错误");
+        }
+    }
 
     protected class SMSCodeGenerator extends AbstractValidateCodeGenerator {
 

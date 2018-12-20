@@ -51,13 +51,14 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor im
         }
     }
 
+    @Override
     public void save(HttpServletRequest request, ValidateCode validateCode) {
         String sessionName = getSessionAttribute();
         request.getSession().setAttribute(sessionName, validateCode);
     }
 
     @Override
-    protected void extraCheck(HttpServletRequest request, ValidateCode validateCode) {
+    protected void extraCheck(HttpServletRequest request, ValidateCode codeInSession) {
         return;
     }
 
