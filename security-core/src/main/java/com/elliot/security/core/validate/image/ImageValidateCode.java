@@ -1,4 +1,4 @@
-package com.elliot.security.core.validate.sms;
+package com.elliot.security.core.validate.image;
 
 import com.elliot.security.core.validate.ValidateCode;
 

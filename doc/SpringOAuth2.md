@@ -64,5 +64,28 @@ grant_type=authorization_code
     Authorization  |  Bearer da019a23-ed8d-4eef-9b45-8b0ac88d9427
 ```
 
+#### 实现OAuth2表单登陆
+
+---------------------------------------------------
+在表单登陆中，我们在web浏览器中采用表单登陆，经过Spring Security认证成功后，认证信息会放到session中。
+
+而在APP中是不存在Session这个概念的，所以我们直接采用发放基于JWT形式的AccessToken就OK。
+
+这里有两种方式:
+
+- 第一种就是OAuth2的密码模式，
+
+- 第二种就是基于表单登陆，登陆成功后发访token，用户拿token访问资源。
+
+我们采用的是方案二:
+
+向认证端点发送包含用户名密码的POST请求，验证成功后，发放AccessToken。
+
+注意我们这里需要验证 client的信息，所以请求头中要携带clientId和clientScret。按照如下设置:
+
+```
+    Content-Type  | application/json;charset=UTF-8
+    Authorization | Basic  base64[clientId:clientScret] 
+```
     
       

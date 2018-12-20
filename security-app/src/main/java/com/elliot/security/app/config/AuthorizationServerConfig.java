@@ -1,4 +1,4 @@
-package com.elliot.security.app.oauth;
+package com.elliot.security.app.config;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties;
@@ -7,19 +7,19 @@ import org.springframework.security.oauth2.config.annotation.builders.InMemoryCl
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 
 @Configuration
 @EnableAuthorizationServer
-public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter{
-
+public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
     /**
      * tokenKey的访问权限表达式配置
      */
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security.tokenKeyAccess("permitAll()");
-        security.allowFormAuthenticationForClients();
+//        security.allowFormAuthenticationForClients();
     }
 
     /**

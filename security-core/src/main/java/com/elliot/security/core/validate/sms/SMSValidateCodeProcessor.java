@@ -49,6 +49,16 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor {
         System.out.println("向手机号" + phoneNum + "发送短信验证码" + code);
     }
 
+    @Override
+    protected void save(HttpServletRequest request, ValidateCode validateCode) {
+
+    }
+
+    @Override
+    public void validate(HttpServletRequest request) {
+
+    }
+
     protected class SMSCodeGenerator extends AbstractValidateCodeGenerator {
 
         @Override

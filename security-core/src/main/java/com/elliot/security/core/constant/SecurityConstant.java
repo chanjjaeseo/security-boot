@@ -22,4 +22,10 @@ public interface SecurityConstant {
 
     }
 
+    interface OAuth {
+
+        String OAUTH_URL_PREFIX = "/oauth";
+
+    }
+
 }

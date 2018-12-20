@@ -7,6 +7,6 @@ public interface ValidateCodeProcessor {
 
     void create(HttpServletRequest request, HttpServletResponse response);
 
-
     void validate(HttpServletRequest request);
+
 }

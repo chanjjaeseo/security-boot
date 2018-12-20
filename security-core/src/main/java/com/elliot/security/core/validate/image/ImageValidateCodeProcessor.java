@@ -1,33 +1,50 @@
 package com.elliot.security.core.validate.image;
 
+import com.elliot.security.core.config.bean.ImageCode;
 import com.elliot.security.core.config.bean.SecurityBootBean;
+import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
 import com.elliot.security.core.validate.AbstractValidateCodeProcessor;
-import com.elliot.security.core.validate.sms.ImageValidateCode;
 import com.elliot.security.core.validate.ValidateCode;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.ServletRequestBindingException;
+import org.springframework.web.bind.ServletRequestUtils;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.time.LocalDateTime;
 import java.util.Random;
 
 @Component("imageValidateCodeProcessor")
-public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor {
+public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor implements InitializingBean {
+
+    private static final String EMPTY_VALIDATE_CODE = "&";
 
     @Autowired
     private SecurityBootBean securityBootBean;
 
-    private ImageCodeGenetor imageCodeGenetor = new ImageCodeGenetor();
+    private String sessionAttribute;
+
+    private String requestParameter;
+
+    private ImageCodeGenerator imageCodeGenerator = new ImageCodeGenerator();
 
     @Override
-    protected ValidateCode generate() {
-        return imageCodeGenetor.generate();
+    public void afterPropertiesSet() {
+        ImageCode imageCode = securityBootBean.getCode().getImage();
+        sessionAttribute = imageCode.getSessionAttibute();
+        requestParameter = imageCode.getRequestParameter();
+    }
+
+    @Override
+    public ValidateCode generate() {
+        return imageCodeGenerator.generate();
     }
 
     @Override
@@ -40,7 +57,53 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor {
         }
     }
 
-    private class ImageCodeGenetor extends AbstractValidateCodeGenerator {
+    public void save(HttpServletRequest request, ValidateCode validateCode) {
+        String sessionName = getSessionName();
+        request.getSession().setAttribute(sessionName, validateCode);
+    }
+
+    @Override
+    public void validate(HttpServletRequest request) {
+        String code = getValidateCodeFromRequest(request);
+        ValidateCode codeInSession = getValidateCodeFromSession(request);
+        if (StringUtils.isBlank(code)) {
+            throw new ValidateException("验证码不能为空");
+        }
+        if (LocalDateTime.now().isAfter(codeInSession.getInvalidTime())) {
+            throw new ValidateException("验证码已失效");
+        }
+        if (!codeInSession.getCode().equals(code)) {
+            throw new ValidateException("验证码不匹配");
+        }
+    }
+
+    private String getValidateCodeFromRequest(HttpServletRequest request) {
+        String requestName = getRequestParameter();
+        String validateCode = EMPTY_VALIDATE_CODE;
+        try {
+            validateCode = ServletRequestUtils.getStringParameter(request, requestName);
+        } catch (ServletRequestBindingException e) {
+            logger.error("从request中获取验证码失败", e);
+        }
+        return validateCode;
+    }
+
+    private String getRequestParameter() {
+        return requestParameter;
+    }
+
+    private ValidateCode getValidateCodeFromSession(HttpServletRequest request) {
+        String sessionName = getSessionName();
+        ValidateCode codeInSession = (ValidateCode) request.getSession().getAttribute(sessionName);
+        request.getSession().removeAttribute(sessionName);
+        return codeInSession;
+    }
+
+    private String getSessionName() {
+        return sessionAttribute;
+    }
+
+    private class ImageCodeGenerator extends AbstractValidateCodeGenerator {
 
         @Override
         public ValidateCode generate() {

@@ -1,5 +1,7 @@
 package com.elliot.security.core.config;
 
+import com.elliot.security.core.validate.filter.ImageValidateCodeFilter;
+import com.elliot.security.core.validate.image.ImageValidateCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -13,11 +15,11 @@ import javax.servlet.Filter;
 public class ValidateCodeAuthenticationConfig extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity> {
 
     @Autowired
-    private Filter validateCodeFilter;
+    private ImageValidateCodeFilter imageValidateCodeFilter;
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.addFilterBefore(validateCodeFilter, AbstractPreAuthenticatedProcessingFilter.class);
+        http.addFilterBefore(imageValidateCodeFilter, AbstractPreAuthenticatedProcessingFilter.class);
     }
 
 }

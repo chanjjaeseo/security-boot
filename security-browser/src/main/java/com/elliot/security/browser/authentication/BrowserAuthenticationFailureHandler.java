@@ -1,4 +1,4 @@
-package com.elliot.security.app.authentication;
+package com.elliot.security.browser.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Component("defaultAuthenticationFailureHandler")
-public class DefaultAuthenticationFailureHandler implements AuthenticationFailureHandler{
+@Component("browserAuthenticationFailureHandler")
+public class BrowserAuthenticationFailureHandler implements AuthenticationFailureHandler {
 
     @Autowired
     private ObjectMapper objectMapper;

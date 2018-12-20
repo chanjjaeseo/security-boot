@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Component
-public class DefaultAuthenticationSuccessHandler implements AuthenticationSuccessHandler{
+@Component("browserAuthenticationSuccessHandler")
+public class BrowserAuthenticationSuccessHandler implements AuthenticationSuccessHandler{
 
     @Autowired
     private ObjectMapper objectMapper;
