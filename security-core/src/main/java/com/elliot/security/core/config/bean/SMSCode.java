@@ -6,7 +6,7 @@ public class SMSCode {
 
     private int expiredMinutes = 3;
 
-    private String phoneParameter = "v-code-sms";
+    private String phoneParameter = "mobile";
 
     private String sessionAttribute = "VALIDATE_CODE_IMAGE";
 

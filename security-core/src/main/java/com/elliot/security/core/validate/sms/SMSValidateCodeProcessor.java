@@ -42,6 +42,7 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor impl
 
     @Override
     protected void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode) {
+        // 发送与验证的request parameter一致
         String phoneNum = getMobileNumber(request);
         if (StringUtils.isNotBlank(phoneNum)) {
             doSend(phoneNum, validateCode.getCode());

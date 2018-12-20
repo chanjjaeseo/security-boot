@@ -1,5 +1,6 @@
 package com.elliot.security.core.validate.sms;
 
+import com.elliot.security.core.validate.ValidateCodeProcessor;
 import com.elliot.security.core.validate.token.MobileAuthenticationToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +24,7 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
     private UserDetailsService userDetailsService;
     private boolean forcePrincipalAsString = false;
 
-    public MobileAuthenticationProvider(UserDetailsService userDetailsService) {
+    public MobileAuthenticationProvider(UserDetailsService userDetailsService, ValidateCodeProcessor validateCodeProcessor) {
         this.userDetailsService = userDetailsService;
     }
 
@@ -61,7 +62,7 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
     }
 
     protected Authentication createSuccessAuthentication(Object principal, Authentication authentication, UserDetails user) {
-        MobileAuthenticationToken result = new MobileAuthenticationToken(principal, user.getAuthorities());
+        MobileAuthenticationToken result = new MobileAuthenticationToken(principal, authentication, user.getAuthorities());
         result.setDetails(authentication.getDetails());
         return result;
     }
