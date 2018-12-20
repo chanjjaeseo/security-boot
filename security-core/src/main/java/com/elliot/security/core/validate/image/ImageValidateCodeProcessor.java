@@ -24,21 +24,15 @@ import java.util.Random;
 @Component("imageValidateCodeProcessor")
 public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor implements InitializingBean {
 
-    private static final String EMPTY_VALIDATE_CODE = "&";
-
     @Autowired
     private SecurityBootBean securityBootBean;
-
-    private String sessionAttribute;
-
-    private String requestParameter;
 
     private ImageCodeGenerator imageCodeGenerator = new ImageCodeGenerator();
 
     @Override
     public void afterPropertiesSet() {
         ImageCode imageCode = securityBootBean.getCode().getImage();
-        sessionAttribute = imageCode.getSessionAttibute();
+        sessionAttribute = imageCode.getSessionAttribute();
         requestParameter = imageCode.getRequestParameter();
     }
 
@@ -58,49 +52,13 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor im
     }
 
     public void save(HttpServletRequest request, ValidateCode validateCode) {
-        String sessionName = getSessionName();
+        String sessionName = getSessionAttribute();
         request.getSession().setAttribute(sessionName, validateCode);
     }
 
     @Override
-    public void validate(HttpServletRequest request) {
-        String code = getValidateCodeFromRequest(request);
-        ValidateCode codeInSession = getValidateCodeFromSession(request);
-        if (StringUtils.isBlank(code)) {
-            throw new ValidateException("验证码不能为空");
-        }
-        if (LocalDateTime.now().isAfter(codeInSession.getInvalidTime())) {
-            throw new ValidateException("验证码已失效");
-        }
-        if (!codeInSession.getCode().equals(code)) {
-            throw new ValidateException("验证码不匹配");
-        }
-    }
-
-    private String getValidateCodeFromRequest(HttpServletRequest request) {
-        String requestName = getRequestParameter();
-        String validateCode = EMPTY_VALIDATE_CODE;
-        try {
-            validateCode = ServletRequestUtils.getStringParameter(request, requestName);
-        } catch (ServletRequestBindingException e) {
-            logger.error("从request中获取验证码失败", e);
-        }
-        return validateCode;
-    }
-
-    private String getRequestParameter() {
-        return requestParameter;
-    }
-
-    private ValidateCode getValidateCodeFromSession(HttpServletRequest request) {
-        String sessionName = getSessionName();
-        ValidateCode codeInSession = (ValidateCode) request.getSession().getAttribute(sessionName);
-        request.getSession().removeAttribute(sessionName);
-        return codeInSession;
-    }
-
-    private String getSessionName() {
-        return sessionAttribute;
+    protected void extraCheck(HttpServletRequest request, ValidateCode validateCode) {
+        return;
     }
 
     private class ImageCodeGenerator extends AbstractValidateCodeGenerator {

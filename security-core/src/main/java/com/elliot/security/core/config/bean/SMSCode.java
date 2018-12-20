@@ -6,7 +6,9 @@ public class SMSCode {
 
     private int expiredMinutes = 3;
 
-    private String phoneParameter = "phone-num";
+    private String phoneParameter = "v-code-sms";
+
+    private String sessionAttribute = "VALIDATE_CODE_IMAGE";
 
     public String getPhoneParameter() {
         return phoneParameter;
@@ -30,5 +32,13 @@ public class SMSCode {
 
     public void setExpiredMinutes(int expiredMinutes) {
         this.expiredMinutes = expiredMinutes;
+    }
+
+    public String getSessionAttribute() {
+        return sessionAttribute;
+    }
+
+    public void setSessionAttribute(String sessionAttribute) {
+        this.sessionAttribute = sessionAttribute;
     }
 }

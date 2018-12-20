@@ -9,8 +9,12 @@ public class ValidateCode {
     private LocalDateTime invalidTime;
 
     public ValidateCode(String code, int delayMinutes) {
+        this(code, LocalDateTime.now().plusMinutes((long) delayMinutes));
+    }
+
+    public ValidateCode(String code, LocalDateTime invalidTime) {
         this.code = code;
-        this.invalidTime = LocalDateTime.now().plusMinutes((long) delayMinutes);
+        this.invalidTime = invalidTime;
     }
 
     public String getCode() {

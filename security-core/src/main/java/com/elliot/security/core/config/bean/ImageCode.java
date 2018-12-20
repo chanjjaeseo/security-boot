@@ -4,7 +4,7 @@ public class ImageCode {
 
     private String requestParameter = "v-code-image";
 
-    private String sessionAttibute = "VALIDATE_CODE_IMAGE";
+    private String sessionAttribute = "VALIDATE_CODE_IMAGE";
 
     private int length = 4;
 
@@ -54,11 +54,11 @@ public class ImageCode {
         this.requestParameter = requestParameter;
     }
 
-    public String getSessionAttibute() {
-        return sessionAttibute;
+    public String getSessionAttribute() {
+        return sessionAttribute;
     }
 
-    public void setSessionAttibute(String sessionAttibute) {
-        this.sessionAttibute = sessionAttibute;
+    public void setSessionAttribute(String sessionAttribute) {
+        this.sessionAttribute = sessionAttribute;
     }
 }

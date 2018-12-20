@@ -26,12 +26,11 @@ public class ImageValidateCodeFilter extends OncePerRequestFilter {
     @Autowired
     private ValidateCodeProcessor imageValidateCodeProcessor;
 
-    private static final String IMAGE_VALIDATE_URL = SecurityConstant.ValidateCode.VALIDATE_CODE_URL_PREFIX + "/image";
+    private static final String FORM_LOGIN_URL = SecurityConstant.FormLogin.LOGIN_PROCESS_URL;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-
-        boolean uriMatched = antPathMatcher.match(IMAGE_VALIDATE_URL, request.getRequestURI());
+        boolean uriMatched = antPathMatcher.match(FORM_LOGIN_URL, request.getRequestURI());
         if (uriMatched) {
             try {
                 imageValidateCodeProcessor.validate(request);
