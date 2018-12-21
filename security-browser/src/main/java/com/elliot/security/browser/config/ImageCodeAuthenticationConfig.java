@@ -1,7 +1,7 @@
 package com.elliot.security.browser.config;
 
 import com.elliot.security.core.constant.SecurityConstant;
-import com.elliot.security.core.validate.checker.SessionValidateCodeChecker;
+import com.elliot.security.core.validate.checker.DefaultValidateCodeChecker;
 import com.elliot.security.core.validate.checker.ValidateCodeChecker;
 import com.elliot.security.core.validate.image.ImageValidateCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class ImageCodeAuthenticationConfig extends SecurityConfigurerAdapter<Def
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        ValidateCodeChecker imageValidateCodeChecker = new SessionValidateCodeChecker(SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_REQUEST_NAME, SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_SESSION_NAME);
+        ValidateCodeChecker imageValidateCodeChecker = new DefaultValidateCodeChecker(SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_REQUEST_NAME, SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_SESSION_NAME);
         imageValidateCodeFilter.setImageValidateCodeChecker(imageValidateCodeChecker);
         http.addFilterBefore(imageValidateCodeFilter, AbstractPreAuthenticatedProcessingFilter.class);
     }

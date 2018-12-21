@@ -1,6 +1,8 @@
 package com.elliot.security.core.validate.checker;
 
+import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.ValidateCode;
+import com.elliot.security.core.validate.ValidateCodeUtil;
 import com.elliot.security.core.validate.sms.SMSValidateCode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -12,22 +14,28 @@ public class RedisSMSCodeChecker extends StorageValidateCodeChecker {
 
     private RedisTemplate redisTemplate;
 
-    private final static String SMS_CODE_REDIS__HASH_KEY = "sms_validate_code";
-
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public RedisSMSCodeChecker(String requestParameter) {
+    private String redisHashKey;
+
+    public RedisSMSCodeChecker(String requestParameter, String redisHashKey) {
         super(requestParameter);
+        this.redisHashKey = redisHashKey;
     }
 
     @Override
     protected void postCheck(HttpServletRequest request, ValidateCode codeInStorage) {
-
+        String mobile = ValidateCodeUtil.getValidateCodeFromRequest(request, "mobile");
+        SMSValidateCode code = (SMSValidateCode) codeInStorage;
+        if (code == null && !mobile.equals(code.getMobile())) {
+            throw new ValidateException("手机号验证失败");
+        }
     }
+
 
     @Override
     protected SMSValidateCode getValidateCodeFromStorage(HttpServletRequest request, String storageId) {
-        String content = (String) redisTemplate.opsForHash().get(SMS_CODE_REDIS__HASH_KEY, storageId);
+        String content = (String) redisTemplate.opsForHash().get(redisHashKey, storageId);
         SMSValidateCode code = null;
         try {
             code = objectMapper.readValue(content, SMSValidateCode.class);

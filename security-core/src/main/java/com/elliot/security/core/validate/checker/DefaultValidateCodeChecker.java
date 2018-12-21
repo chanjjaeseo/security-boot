@@ -5,11 +5,11 @@ import com.elliot.security.core.validate.ValidateCodeUtil;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class SessionValidateCodeChecker extends StorageValidateCodeChecker {
+public class DefaultValidateCodeChecker extends StorageValidateCodeChecker {
 
     private String sessionName;
 
-    public SessionValidateCodeChecker(String requestParameter, String sessionName) {
+    public DefaultValidateCodeChecker(String requestParameter, String sessionName) {
         super(requestParameter);
         this.sessionName = sessionName;
     }

@@ -1,8 +1,6 @@
 package com.elliot.security.app.config;
 
 import com.elliot.security.core.config.FormAuthenticationConfig;
-import com.elliot.security.core.config.ImageCodeAuthenticationConfig;
-import com.elliot.security.core.config.SMSCodeAuthenticationConfig;
 import com.elliot.security.core.constant.SecurityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -17,9 +15,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Autowired
     private FormAuthenticationConfig formAuthenticationConfig;
-
-    @Autowired
-    private ImageCodeAuthenticationConfig imageCodeAuthenticationConfig;
 
     @Autowired
     private SMSCodeAuthenticationConfig smsCodeAuthenticationConfig;

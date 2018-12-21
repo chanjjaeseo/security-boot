@@ -1,6 +1,7 @@
-package com.elliot.security.browser.config;
+package com.elliot.security.app.config;
 
 import com.elliot.security.core.constant.SecurityConstant;
+import com.elliot.security.core.validate.checker.RedisSMSCodeChecker;
 import com.elliot.security.core.validate.checker.SessionSMSCodeChecker;
 import com.elliot.security.core.validate.checker.ValidateCodeChecker;
 import com.elliot.security.core.validate.sms.MobileAuthenticationFilter;
@@ -35,8 +36,7 @@ public class SMSCodeAuthenticationConfig extends SecurityConfigurerAdapter<Defau
         mobileAuthenticationFilter.setAuthenticationSuccessHandler(authenticationSuccessHandler);
         mobileAuthenticationFilter.setAuthenticationFailureHandler(authenticationFailureHandler);
 
-        ValidateCodeChecker smsValidateCodeChecker =
-                new SessionSMSCodeChecker(SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_REQUEST_NAME, SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_SESSION_NAME);
+        ValidateCodeChecker smsValidateCodeChecker = new RedisSMSCodeChecker(SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_REQUEST_NAME, "sms_validate_code");
         mobileAuthenticationFilter.setSmsValidateCodeChecker(smsValidateCodeChecker);
 
         MobileAuthenticationProvider mobileAuthenticationProvider = new MobileAuthenticationProvider();
