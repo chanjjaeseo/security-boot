@@ -1,8 +1,8 @@
 package com.elliot.security.core.validate.endpoint;
 
 import com.elliot.security.core.constant.ValidateCodeEnum;
-import com.elliot.security.core.validate.ValidateCodeProcessor;
-import com.elliot.security.core.validate.ValidateCodeProcessorHolder;
+import com.elliot.security.core.validate.processor.ValidateCodeProcessor;
+import com.elliot.security.core.validate.processor.ValidateCodeProcessorHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,25 +1,21 @@
 package com.elliot.security.core.validate.sms;
 
-import com.elliot.security.core.config.bean.SMSCode;
 import com.elliot.security.core.config.bean.SecurityBootBean;
-import com.elliot.security.core.exception.ValidateException;
-import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
-import com.elliot.security.core.validate.AbstractValidateCodeProcessor;
+import com.elliot.security.core.validate.processor.AbstractValidateCodeGenerator;
+import com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCode;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.ServletRequestUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Component("smsValidateCodeProcessor")
-public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor implements InitializingBean {
+public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -27,13 +23,6 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor impl
     private SecurityBootBean securityBootBean;
 
     private SMSCodeGenerator smsCodeGenerator = new SMSCodeGenerator();
-
-    @Override
-    public void afterPropertiesSet() {
-        SMSCode smsCode = securityBootBean.getCode().getSms();
-        requestParameter = smsCode.getPhoneParameter();
-        sessionAttribute = smsCode.getSessionAttribute();
-    }
 
     @Override
     protected ValidateCode generate() {
@@ -72,22 +61,13 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor impl
         request.getSession().setAttribute(sessionAttribute, smsValidateCode);
     }
 
-    @Override
-    protected void extraCheck(HttpServletRequest request, ValidateCode codeInSession) {
-        SMSValidateCode smsValidateCode = (SMSValidateCode) codeInSession;
-        String mobileInRequest = getMobileNumber(request);
-        if (mobileInRequest == null || !mobileInRequest.equals(smsValidateCode.getMobile())) {
-            throw new ValidateException("验证失败:手机号错误");
-        }
-    }
-
     protected class SMSCodeGenerator extends AbstractValidateCodeGenerator {
 
         @Override
         public ValidateCode generate() {
             int smsCodeLength = securityBootBean.getCode().getSms().getLength();
             int expiredMinutes = securityBootBean.getCode().getSms().getExpiredMinutes();
-            String code = generateCodeString(smsCodeLength);
+            String code = generateCode(smsCodeLength);
             return new ValidateCode(code, expiredMinutes);
         }
 

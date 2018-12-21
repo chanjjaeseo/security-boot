@@ -1,6 +1,5 @@
 package com.elliot.security.core.validate.sms;
 
-import com.elliot.security.core.validate.ValidateCodeProcessor;
 import com.elliot.security.core.validate.token.MobileAuthenticationToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsChecker;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Component;
 
 public class MobileAuthenticationProvider implements AuthenticationProvider {
 
@@ -23,10 +21,6 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
     private MessageSourceAccessor messages = SpringSecurityMessageSource.getAccessor();
     private UserDetailsService userDetailsService;
     private boolean forcePrincipalAsString = false;
-
-    public MobileAuthenticationProvider(UserDetailsService userDetailsService, ValidateCodeProcessor validateCodeProcessor) {
-        this.userDetailsService = userDetailsService;
-    }
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
@@ -62,7 +56,7 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
     }
 
     protected Authentication createSuccessAuthentication(Object principal, Authentication authentication, UserDetails user) {
-        MobileAuthenticationToken result = new MobileAuthenticationToken(principal, authentication, user.getAuthorities());
+        MobileAuthenticationToken result = new MobileAuthenticationToken(principal, user.getAuthorities());
         result.setDetails(authentication.getDetails());
         return result;
     }
@@ -103,4 +97,7 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
         }
     }
 
+    public void setUserDetailsService(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
 }

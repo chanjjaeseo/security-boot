@@ -9,24 +9,21 @@ public class MobileAuthenticationToken extends AbstractAuthenticationToken {
 
     private static final long serialVersionUID = 420L;
     private final Object principal;
-    private Object credentials;
 
-    public MobileAuthenticationToken(Object principal, Object credentials) {
+    public MobileAuthenticationToken(Object principal) {
         super(null);
         this.principal = principal;
-        this.credentials = credentials;
         this.setAuthenticated(false);
     }
 
-    public MobileAuthenticationToken(Object principal, Object credentials, Collection<? extends GrantedAuthority> authorities) {
+    public MobileAuthenticationToken(Object principal, Collection<? extends GrantedAuthority> authorities) {
         super(authorities);
         this.principal = principal;
-        this.credentials = credentials;
         super.setAuthenticated(true);
     }
 
     public Object getCredentials() {
-        return credentials;
+        return null;
     }
 
     public Object getPrincipal() {
@@ -43,6 +40,5 @@ public class MobileAuthenticationToken extends AbstractAuthenticationToken {
 
     public void eraseCredentials() {
         super.eraseCredentials();
-        this.credentials = null;
     }
 }

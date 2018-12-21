@@ -1,40 +1,29 @@
 package com.elliot.security.core.validate.image;
 
-import com.elliot.security.core.config.bean.ImageCode;
 import com.elliot.security.core.config.bean.SecurityBootBean;
-import com.elliot.security.core.exception.ValidateException;
-import com.elliot.security.core.validate.AbstractValidateCodeGenerator;
-import com.elliot.security.core.validate.AbstractValidateCodeProcessor;
+import com.elliot.security.core.constant.SecurityConstant;
+import com.elliot.security.core.util.WebUtil;
+import com.elliot.security.core.validate.processor.AbstractValidateCodeGenerator;
+import com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCode;
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.ServletRequestBindingException;
-import org.springframework.web.bind.ServletRequestUtils;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.time.LocalDateTime;
 import java.util.Random;
 
 @Component("imageValidateCodeProcessor")
-public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor implements InitializingBean {
+public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor {
 
     @Autowired
     private SecurityBootBean securityBootBean;
 
     private ImageCodeGenerator imageCodeGenerator = new ImageCodeGenerator();
 
-    @Override
-    public void afterPropertiesSet() {
-        ImageCode imageCode = securityBootBean.getCode().getImage();
-        sessionAttribute = imageCode.getSessionAttribute();
-        requestParameter = imageCode.getRequestParameter();
-    }
 
     @Override
     public ValidateCode generate() {
@@ -53,13 +42,7 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor im
 
     @Override
     public void save(HttpServletRequest request, ValidateCode validateCode) {
-        String sessionName = getSessionAttribute();
-        request.getSession().setAttribute(sessionName, validateCode);
-    }
-
-    @Override
-    protected void extraCheck(HttpServletRequest request, ValidateCode codeInSession) {
-        return;
+        WebUtil.setValidateCodeToSession(request, SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_SESSION_NAME, validateCode);
     }
 
     private class ImageCodeGenerator extends AbstractValidateCodeGenerator {
@@ -70,7 +53,7 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor im
             int height = securityBootBean.getCode().getImage().getHeight();
             int imageCodeLength = securityBootBean.getCode().getImage().getLength();
             int expiredMinutes = securityBootBean.getCode().getImage().getExpiredMinutes();
-            String code = generateCodeString(imageCodeLength);
+            String code = generateCode(imageCodeLength);
             BufferedImage bufferedImage = generateBufferedImage(width, height, code);
             return new ImageValidateCode(code, expiredMinutes, bufferedImage);
         }

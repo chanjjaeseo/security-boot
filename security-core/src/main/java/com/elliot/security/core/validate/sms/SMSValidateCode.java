@@ -1,6 +1,7 @@
 package com.elliot.security.core.validate.sms;
 
 import com.elliot.security.core.validate.ValidateCode;
+import org.springframework.security.core.userdetails.UserDetails;
 
 public class SMSValidateCode extends ValidateCode {
 

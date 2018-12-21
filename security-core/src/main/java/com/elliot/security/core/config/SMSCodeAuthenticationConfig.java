@@ -32,7 +32,9 @@ public class SMSCodeAuthenticationConfig extends SecurityConfigurerAdapter<Defau
         mobileAuthenticationFilter.setAuthenticationSuccessHandler(authenticationSuccessHandler);
         mobileAuthenticationFilter.setAuthenticationFailureHandler(authenticationFailureHandler);
 
-        MobileAuthenticationProvider mobileAuthenticationProvider = new MobileAuthenticationProvider(userDetailsService);
+        MobileAuthenticationProvider mobileAuthenticationProvider = new MobileAuthenticationProvider();
+        mobileAuthenticationProvider.setUserDetailsService(userDetailsService);
+
         builder.authenticationProvider(mobileAuthenticationProvider)
                .addFilterAfter(mobileAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
     }

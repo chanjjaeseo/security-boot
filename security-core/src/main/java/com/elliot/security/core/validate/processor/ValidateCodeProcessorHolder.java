@@ -1,4 +1,4 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.validate.processor;
 
 import com.elliot.security.core.constant.ValidateCodeEnum;
 import org.springframework.beans.factory.annotation.Autowired;
