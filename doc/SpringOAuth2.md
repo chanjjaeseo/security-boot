@@ -1,5 +1,5 @@
 #### Spring OAuth 
-> Spring OAuth 主要针对APP实现。访问Web服务器的客户端具备Session存储的功能，所以我们可以利用Session存储
+> APP 模块主要采用 Spring OAuth 实现。访问Web服务器的客户端具备Session存储的功能，所以我们可以利用Session存储
 省略很多安全存储的工作。我们可以利用OAuth2的认证流程(基于JWT)作为APP各项安全认证的实现方式。
 -----------------
   
@@ -64,7 +64,7 @@ grant_type=authorization_code
     Authorization  |  Bearer da019a23-ed8d-4eef-9b45-8b0ac88d9427
 ```
 
-#### 实现OAuth2表单登陆
+#### 表单登陆
 
 ---------------------------------------------------
 在表单登陆中，我们在web浏览器中采用表单登陆，经过Spring Security认证成功后，认证信息会放到session中。
@@ -79,7 +79,7 @@ grant_type=authorization_code
 
 我们采用的是方案二:
 
-向认证端点发送包含用户名密码的POST请求，验证成功后，发放AccessToken。
+向认证端点(默认为/login/form)发送包含用户名(username)密码(password)的POST请求，验证成功后，发放AccessToken。
 
 注意我们这里需要验证 client的信息，所以请求头中要携带clientId和clientScret。按照如下设置:
 
@@ -87,5 +87,29 @@ grant_type=authorization_code
     Content-Type  | application/json;charset=UTF-8
     Authorization | Basic  base64[clientId:clientScret] 
 ```
+
+请求后我们就能拿到accessToken，在请求头中放如accessToken就能正常访问了。
+
+```
+    Authorization | Bearer 1b30fd1b-fdf6c-4b16-a542-23c089e33beb
+```
+    
+#### 手机登陆
+
+-------------------------------------------
+首先我们需要向手机号发送短信获取验证码，然后走与表单登陆一样的逻辑。
+
+向认证端点(默认为/login/sms)发送手机号(mobile)和验证码(sms_v_code)的POST请求，
+
+同时也要携带Authentication请求头，这里与表单登陆一致。
+
+然后携带授权码访问即可，这里在上面的表单登陆介绍过不再赘述。
+
+#### OAuth2 登陆
+
+
+
+
+
     
       
