@@ -3,6 +3,7 @@ package com.elliot.security.core.validate.image;
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.util.WebUtil;
+import com.elliot.security.core.validate.ValidateCodeUtil;
 import com.elliot.security.core.validate.processor.AbstractValidateCodeGenerator;
 import com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCode;
@@ -42,7 +43,7 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor {
 
     @Override
     public void save(HttpServletRequest request, ValidateCode validateCode) {
-        WebUtil.setValidateCodeToSession(request, SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_SESSION_NAME, validateCode);
+        ValidateCodeUtil.setValidateCodeToSession(request, SecurityConstant.ValidateCode.IMAGE_VALIDATE_CODE_SESSION_NAME, validateCode);
     }
 
     private class ImageCodeGenerator extends AbstractValidateCodeGenerator {
@@ -77,12 +78,12 @@ public class ImageValidateCodeProcessor extends AbstractValidateCodeProcessor {
                 g.drawLine(x, y, x + xl, y + yl);
             }
 
-            char[] charseq = code.toCharArray();
+            char[] charSeq = code.toCharArray();
             for (int i = 0; i < code.length(); i++) {
                 g.setColor(new Color(20 + random.nextInt(110),
                         20 + random.nextInt(110),
                         20 + random.nextInt(110)));
-                g.drawString(String.valueOf(charseq[i]), 13 * i + 6, 16);
+                g.drawString(String.valueOf(charSeq[i]), 13 * i + 6, 16);
             }
 
             g.dispose();

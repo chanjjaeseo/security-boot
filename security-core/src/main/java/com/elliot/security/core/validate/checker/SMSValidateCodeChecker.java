@@ -4,6 +4,7 @@ import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.util.WebUtil;
 import com.elliot.security.core.validate.ValidateCode;
+import com.elliot.security.core.validate.ValidateCodeUtil;
 import com.elliot.security.core.validate.sms.SMSValidateCode;
 
 import javax.servlet.http.HttpServletRequest;
@@ -26,7 +27,7 @@ public class SMSValidateCodeChecker extends StorageValidateCodeChecker {
     protected void postCheck(HttpServletRequest request, ValidateCode codeInStorage) {
         SMSValidateCode code = (SMSValidateCode) codeInStorage;
         String mobileInStorage = code.getMobile();
-        String mobileInRequest = WebUtil.getValidateCodeFromRequest(request, mobileParameter);
+        String mobileInRequest = ValidateCodeUtil.getValidateCodeFromRequest(request, mobileParameter);
         if (!mobileInStorage.equals(mobileInRequest)) {
             throw new ValidateException("验证码错误");
         }
@@ -34,8 +35,6 @@ public class SMSValidateCodeChecker extends StorageValidateCodeChecker {
 
     @Override
     protected ValidateCode getValidateCodeFromStorage(HttpServletRequest request, String storageId) {
-        ValidateCode codeInSession = (ValidateCode) request.getSession().getAttribute(storageId);
-        request.getSession().removeAttribute(storageId);
-        return codeInSession;
+        return ValidateCodeUtil.getCodeFromSession(request, storageId);
     }
 }

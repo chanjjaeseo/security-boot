@@ -3,6 +3,7 @@ package com.elliot.security.core.validate.checker;
 
 import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.ValidateCode;
+import com.elliot.security.core.validate.ValidateCodeUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.ServletRequestBindingException;
@@ -25,7 +26,7 @@ public abstract class StorageValidateCodeChecker implements ValidateCodeChecker 
     @Override
     public void validate(HttpServletRequest request) throws AuthenticationException {
         ValidateCode codeInStorage = getValidateCodeFromStorage(request, storageId);
-        String code = getValidateCodeFromRequest(request);
+        String code = ValidateCodeUtil.getValidateCodeFromRequest(request, requestParameter);
         preCheck(codeInStorage, code);
         postCheck(request, codeInStorage);
     }
@@ -48,16 +49,6 @@ public abstract class StorageValidateCodeChecker implements ValidateCodeChecker 
     protected abstract void postCheck(HttpServletRequest request, ValidateCode codeInStorage);
 
     protected abstract ValidateCode getValidateCodeFromStorage(HttpServletRequest request, String storageId);
-
-    private String getValidateCodeFromRequest(HttpServletRequest request) {
-        String code = "";
-        try {
-            code = ServletRequestUtils.getStringParameter(request, requestParameter);
-        } catch (ServletRequestBindingException e) {
-            //
-        }
-        return code;
-    }
 
     public String getRequestParameter() {
         return requestParameter;
