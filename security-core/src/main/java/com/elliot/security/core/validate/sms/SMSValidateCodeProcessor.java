@@ -1,6 +1,7 @@
 package com.elliot.security.core.validate.sms;
 
 import com.elliot.security.core.config.bean.SecurityBootBean;
+import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.validate.processor.AbstractValidateCodeGenerator;
 import com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCode;
@@ -32,13 +33,13 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor {
     @Override
     protected void send(HttpServletRequest request, HttpServletResponse response, ValidateCode validateCode) {
         // 发送与验证的request parameter一致
-        String phoneNum = getMobileNumber(request);
+        String phoneNum = getMobileNumber(request, SecurityConstant.MobileLogin.MOBILE_REQUEST_PARAMETER);
         if (StringUtils.isNotBlank(phoneNum)) {
             doSend(phoneNum, validateCode.getCode());
         }
     }
 
-    private String getMobileNumber(HttpServletRequest request) {
+    private String getMobileNumber(HttpServletRequest request, String requestParameter) {
         try {
             String phoneNum = ServletRequestUtils.getRequiredStringParameter(request, requestParameter);
             if (StringUtils.isNotBlank(phoneNum)) {
@@ -56,9 +57,9 @@ public class SMSValidateCodeProcessor extends AbstractValidateCodeProcessor {
 
     @Override
     protected void save(HttpServletRequest request, ValidateCode validateCode) {
-        String phoneNum = getMobileNumber(request);
+        String phoneNum = getMobileNumber(request, SecurityConstant.MobileLogin.MOBILE_REQUEST_PARAMETER);
         SMSValidateCode smsValidateCode = new SMSValidateCode(validateCode, phoneNum);
-        request.getSession().setAttribute(sessionAttribute, smsValidateCode);
+        request.getSession().setAttribute(SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_SESSION_NAME, smsValidateCode);
     }
 
     protected class SMSCodeGenerator extends AbstractValidateCodeGenerator {

@@ -9,6 +9,7 @@ public class SMSValidateCode extends ValidateCode {
 
     public SMSValidateCode(ValidateCode validateCode, String mobile) {
         super(validateCode.getCode(), validateCode.getInvalidTime());
+        this.mobile = mobile;
     }
 
     public SMSValidateCode(String mobile, String code, int delayMinutes) {

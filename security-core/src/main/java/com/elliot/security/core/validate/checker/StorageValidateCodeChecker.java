@@ -30,14 +30,17 @@ public abstract class StorageValidateCodeChecker implements ValidateCodeChecker 
         postCheck(request, codeInStorage);
     }
 
-    public void preCheck(ValidateCode validateCode, String code) {
+    public void preCheck(ValidateCode codeInStorage, String code) {
+        if (codeInStorage == null) {
+            throw new ValidateException("验证码已失效");
+        }
         if (StringUtils.isBlank(code)) {
             throw new ValidateException("验证码不能为空");
         }
-        if (LocalDateTime.now().isAfter(validateCode.getInvalidTime())) {
+        if (LocalDateTime.now().isAfter(codeInStorage.getInvalidTime())) {
             throw new ValidateException("验证码已失效");
         }
-        if (!validateCode.getCode().equals(code)) {
+        if (!codeInStorage.getCode().equals(code)) {
             throw new ValidateException("验证码不匹配");
         }
     }

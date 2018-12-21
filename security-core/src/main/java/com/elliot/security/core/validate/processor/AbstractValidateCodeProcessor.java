@@ -11,10 +11,6 @@ public abstract class AbstractValidateCodeProcessor implements ValidateCodeProce
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    protected String sessionAttribute;
-
-    protected String requestParameter;
-
     @Override
     public void create(HttpServletRequest request, HttpServletResponse response) {
         ValidateCode code = generate();

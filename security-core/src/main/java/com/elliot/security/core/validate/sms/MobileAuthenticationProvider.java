@@ -25,7 +25,7 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String username = authentication.getPrincipal() == null ? "NONE_PROVIDED" : authentication.getName();
-        UserDetails user = this.retrieveUser(username, (UsernamePasswordAuthenticationToken)authentication);
+        UserDetails user = this.retrieveUser(username, (MobileAuthenticationToken)authentication);
         this.preAuthenticationChecks.check(user);
         this.postAuthenticationChecks.check(user);
         Object principalToReturn = user;
@@ -35,7 +35,7 @@ public class MobileAuthenticationProvider implements AuthenticationProvider {
         return this.createSuccessAuthentication(principalToReturn, authentication, user);
     }
 
-    private UserDetails retrieveUser(String username, UsernamePasswordAuthenticationToken authentication) {
+    private UserDetails retrieveUser(String username, MobileAuthenticationToken authentication) {
         UserDetails loadedUser;
         try {
             loadedUser = this.getUserDetailsService().loadUserByUsername(username);

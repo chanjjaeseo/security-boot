@@ -3,7 +3,7 @@ package com.elliot.security.core.config;
 import com.elliot.security.core.validate.sms.MobileAuthenticationFilter;
 import com.elliot.security.core.validate.sms.MobileAuthenticationProvider;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.ProviderManager;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -28,7 +28,7 @@ public class SMSCodeAuthenticationConfig extends SecurityConfigurerAdapter<Defau
     @Override
     public void configure(HttpSecurity builder) throws Exception {
         MobileAuthenticationFilter mobileAuthenticationFilter = new MobileAuthenticationFilter();
-        mobileAuthenticationFilter.setAuthenticationManager(builder.getSharedObject(ProviderManager.class));
+        mobileAuthenticationFilter.setAuthenticationManager(builder.getSharedObject(AuthenticationManager.class));
         mobileAuthenticationFilter.setAuthenticationSuccessHandler(authenticationSuccessHandler);
         mobileAuthenticationFilter.setAuthenticationFailureHandler(authenticationFailureHandler);
 

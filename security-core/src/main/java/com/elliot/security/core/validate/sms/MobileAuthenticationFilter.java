@@ -42,7 +42,7 @@ public class MobileAuthenticationFilter extends AbstractAuthenticationProcessing
         }
     }
 
-    private void preCheck(HttpServletRequest request) {
+    protected void preCheck(HttpServletRequest request) {
         smsValidateCodeChecker.validate(request);
     }
 

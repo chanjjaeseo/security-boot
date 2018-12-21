@@ -14,6 +14,7 @@ public class SMSValidateCodeChecker extends StorageValidateCodeChecker {
 
     public SMSValidateCodeChecker() {
         super(SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_REQUEST_NAME, SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_SESSION_NAME);
+        this.mobileParameter = SecurityConstant.MobileLogin.MOBILE_REQUEST_PARAMETER;
     }
 
     public SMSValidateCodeChecker(String requestParameter, String mobileParameter, String storageId) {
@@ -27,7 +28,7 @@ public class SMSValidateCodeChecker extends StorageValidateCodeChecker {
         String mobileInStorage = code.getMobile();
         String mobileInRequest = WebUtil.getValidateCodeFromRequest(request, mobileParameter);
         if (!mobileInStorage.equals(mobileInRequest)) {
-            throw new ValidateException("");
+            throw new ValidateException("验证码错误");
         }
     }
 
