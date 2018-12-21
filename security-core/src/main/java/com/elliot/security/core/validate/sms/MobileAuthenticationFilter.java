@@ -1,10 +1,10 @@
 package com.elliot.security.core.validate.sms;
 
 import com.elliot.security.core.constant.SecurityConstant;
-import com.elliot.security.core.validate.checker.SMSValidateCodeChecker;
+import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.checker.ValidateCodeChecker;
-import com.elliot.security.core.validate.processor.ValidateCodeProcessor;
 import com.elliot.security.core.validate.token.MobileAuthenticationToken;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -19,7 +19,7 @@ public class MobileAuthenticationFilter extends AbstractAuthenticationProcessing
 
     private String mobileParameter = SecurityConstant.MobileLogin.MOBILE_REQUEST_PARAMETER;
     private boolean postOnly = true;
-    private ValidateCodeChecker smsValidateCodeChecker = new SMSValidateCodeChecker();
+    private ValidateCodeChecker smsValidateCodeChecker;
 
     public MobileAuthenticationFilter() {
         super(new AntPathRequestMatcher(SecurityConstant.MobileLogin.LOGIN_PROCESS_URL, "POST"));
@@ -30,20 +30,24 @@ public class MobileAuthenticationFilter extends AbstractAuthenticationProcessing
         if (this.postOnly && !request.getMethod().equals("POST")) {
             throw new AuthenticationServiceException("Authentication method not supported: " + request.getMethod());
         } else {
-            preCheck(request);
+
             String mobile = this.obtainMobile(request);
             if (mobile == null) {
                 mobile = "";
             }
             mobile = mobile.trim();
+            preCheck(request, mobile);
             MobileAuthenticationToken authRequest = new MobileAuthenticationToken(mobile);
             this.setDetails(request, authRequest);
             return this.getAuthenticationManager().authenticate(authRequest);
         }
     }
 
-    protected void preCheck(HttpServletRequest request) {
-        smsValidateCodeChecker.validate(request);
+    protected void preCheck(HttpServletRequest request, String mobile) {
+        if (StringUtils.isBlank(mobile)) {
+            throw new ValidateException("手机号不能为空");
+        }
+        smsValidateCodeChecker.validate(request, mobile);
     }
 
     protected void setDetails(HttpServletRequest request, MobileAuthenticationToken authRequest) {
@@ -54,4 +58,7 @@ public class MobileAuthenticationFilter extends AbstractAuthenticationProcessing
         return request.getParameter(mobileParameter);
     }
 
+    public void setSmsValidateCodeChecker(ValidateCodeChecker smsValidateCodeChecker) {
+        this.smsValidateCodeChecker = smsValidateCodeChecker;
+    }
 }

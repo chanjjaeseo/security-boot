@@ -1,5 +1,6 @@
-package com.elliot.security.core.config;
+package com.elliot.security.browser.config;
 
+import com.elliot.security.core.validate.checker.ValidateCodeChecker;
 import com.elliot.security.core.validate.sms.MobileAuthenticationFilter;
 import com.elliot.security.core.validate.sms.MobileAuthenticationProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,8 @@ public class SMSCodeAuthenticationConfig extends SecurityConfigurerAdapter<Defau
         mobileAuthenticationFilter.setAuthenticationManager(builder.getSharedObject(AuthenticationManager.class));
         mobileAuthenticationFilter.setAuthenticationSuccessHandler(authenticationSuccessHandler);
         mobileAuthenticationFilter.setAuthenticationFailureHandler(authenticationFailureHandler);
+        ValidateCodeChecker smsValidateCodeChecker = new SessionSMSCodeChecker();
+        mobileAuthenticationFilter.setSmsValidateCodeChecker(smsValidateCodeChecker);
 
         MobileAuthenticationProvider mobileAuthenticationProvider = new MobileAuthenticationProvider();
         mobileAuthenticationProvider.setUserDetailsService(userDetailsService);

@@ -1,7 +1,5 @@
 package com.elliot.security.browser.config;
 
-import com.elliot.security.core.config.ImageCodeAuthenticationConfig;
-import com.elliot.security.core.config.SMSCodeAuthenticationConfig;
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.config.FormAuthenticationConfig;
 import com.elliot.security.core.constant.SecurityConstant;

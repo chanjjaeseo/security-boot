@@ -2,9 +2,7 @@ package com.elliot.security.core.validate.image;
 
 import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.exception.ValidateException;
-import com.elliot.security.core.validate.checker.ImageValidateCodeChecker;
 import com.elliot.security.core.validate.checker.ValidateCodeChecker;
-import com.elliot.security.core.validate.processor.ValidateCodeProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
@@ -25,10 +23,7 @@ public class ImageValidateCodeFilter extends OncePerRequestFilter {
     @Autowired
     private AuthenticationFailureHandler authenticationFailureHandler;
 
-    @Autowired
-    private ValidateCodeProcessor imageValidateCodeProcessor;
-
-    private ValidateCodeChecker imageValidateCodeChecker = new ImageValidateCodeChecker();
+    private ValidateCodeChecker imageValidateCodeChecker;
 
     private static final String FORM_LOGIN_URL = SecurityConstant.FormLogin.LOGIN_PROCESS_URL;
 
@@ -37,7 +32,7 @@ public class ImageValidateCodeFilter extends OncePerRequestFilter {
         boolean uriMatched = antPathMatcher.match(FORM_LOGIN_URL, request.getRequestURI());
         if (uriMatched) {
             try {
-                imageValidateCodeChecker.validate(request);
+                imageValidateCodeChecker.validate(request, null);
             } catch (Exception e) {
                 authenticationFailureHandler.onAuthenticationFailure(request, response,
                         new ValidateException(e.getMessage()));
@@ -47,4 +42,7 @@ public class ImageValidateCodeFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
+    public void setImageValidateCodeChecker(ValidateCodeChecker imageValidateCodeChecker) {
+        this.imageValidateCodeChecker = imageValidateCodeChecker;
+    }
 }

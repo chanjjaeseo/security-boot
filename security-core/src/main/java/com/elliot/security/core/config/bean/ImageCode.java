@@ -2,10 +2,6 @@ package com.elliot.security.core.config.bean;
 
 public class ImageCode {
 
-    private String requestParameter = "v-code-image";
-
-    private String sessionAttribute = "VALIDATE_CODE_IMAGE";
-
     private int length = 4;
 
     private int width = 70;
@@ -46,19 +42,4 @@ public class ImageCode {
         this.expiredMinutes = expiredMinutes;
     }
 
-    public String getRequestParameter() {
-        return requestParameter;
-    }
-
-    public void setRequestParameter(String requestParameter) {
-        this.requestParameter = requestParameter;
-    }
-
-    public String getSessionAttribute() {
-        return sessionAttribute;
-    }
-
-    public void setSessionAttribute(String sessionAttribute) {
-        this.sessionAttribute = sessionAttribute;
-    }
 }

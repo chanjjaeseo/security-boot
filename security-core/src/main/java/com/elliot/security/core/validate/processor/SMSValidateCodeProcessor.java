@@ -1,10 +1,9 @@
-package com.elliot.security.core.validate.sms;
+package com.elliot.security.core.validate.processor;
 
 import com.elliot.security.core.config.bean.SecurityBootBean;
 import com.elliot.security.core.constant.SecurityConstant;
-import com.elliot.security.core.validate.processor.AbstractValidateCodeGenerator;
-import com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor;
 import com.elliot.security.core.validate.ValidateCode;
+import com.elliot.security.core.validate.sms.SMSValidateCode;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

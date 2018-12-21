@@ -6,8 +6,6 @@ import com.elliot.security.core.validate.ValidateCode;
 import com.elliot.security.core.validate.ValidateCodeUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.web.bind.ServletRequestBindingException;
-import org.springframework.web.bind.ServletRequestUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
@@ -16,22 +14,22 @@ public abstract class StorageValidateCodeChecker implements ValidateCodeChecker 
 
     private String requestParameter;
 
-    private String storageId;
-
-    public StorageValidateCodeChecker(String requestParameter, String storageId) {
+    public StorageValidateCodeChecker(String requestParameter) {
         this.requestParameter = requestParameter;
-        this.storageId = storageId;
     }
 
     @Override
-    public void validate(HttpServletRequest request) throws AuthenticationException {
-        ValidateCode codeInStorage = getValidateCodeFromStorage(request, storageId);
+    public void validate(HttpServletRequest request, Object storageId) throws AuthenticationException {
+        if (storageId instanceof String) {
+            throw new ValidateException("storageId 必须是字符串");
+        }
+        ValidateCode codeInStorage = getValidateCodeFromStorage(request, (String) storageId);
         String code = ValidateCodeUtil.getValidateCodeFromRequest(request, requestParameter);
         preCheck(codeInStorage, code);
         postCheck(request, codeInStorage);
     }
 
-    public void preCheck(ValidateCode codeInStorage, String code) {
+    private void preCheck(ValidateCode codeInStorage, String code) {
         if (codeInStorage == null) {
             throw new ValidateException("验证码已失效");
         }
@@ -58,11 +56,4 @@ public abstract class StorageValidateCodeChecker implements ValidateCodeChecker 
         this.requestParameter = requestParameter;
     }
 
-    public String getStorageId() {
-        return storageId;
-    }
-
-    public void setStorageId(String storageId) {
-        this.storageId = storageId;
-    }
 }
