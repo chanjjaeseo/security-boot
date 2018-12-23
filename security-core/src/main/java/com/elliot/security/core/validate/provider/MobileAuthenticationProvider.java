@@ -1,6 +1,5 @@
-package com.elliot.security.core.validate.sms;
+package com.elliot.security.core.validate.provider;
 
-import com.elliot.security.core.validate.token.MobileAuthenticationToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.MessageSourceAccessor;

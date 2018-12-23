@@ -1,5 +1,6 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.util;
 
+import com.elliot.security.core.validate.code.ValidateCode;
 import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.ServletRequestUtils;
 
@@ -17,6 +18,7 @@ public class ValidateCodeUtil {
         String code = "";
         try {
             code = ServletRequestUtils.getStringParameter(request, requestParameter);
+            code = code.trim();
         } catch (ServletRequestBindingException e) {
             //
         }

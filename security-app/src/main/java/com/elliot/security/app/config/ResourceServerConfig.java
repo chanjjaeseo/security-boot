@@ -28,7 +28,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         // form login
         formAuthenticationConfig.configure(http);
 
-        // sms code authentication
+        // provider code authentication
         http.apply(smsCodeAuthenticationConfig);
 
         // url resources protected

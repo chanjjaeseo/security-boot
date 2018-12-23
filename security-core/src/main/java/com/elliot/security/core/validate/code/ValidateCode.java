@@ -1,4 +1,4 @@
-package com.elliot.security.core.validate;
+package com.elliot.security.core.validate.code;
 
 import java.time.LocalDateTime;
 
@@ -7,6 +7,10 @@ public class ValidateCode {
     private String code;
 
     private LocalDateTime invalidTime;
+
+    public ValidateCode() {
+
+    }
 
     public ValidateCode(String code, int delayMinutes) {
         this(code, LocalDateTime.now().plusMinutes((long) delayMinutes));

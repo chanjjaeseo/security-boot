@@ -1,8 +1,8 @@
 package com.elliot.security.core.validate.endpoint;
 
-import com.elliot.security.core.constant.ValidateCodeEnum;
 import com.elliot.security.core.validate.processor.ValidateCodeProcessor;
 import com.elliot.security.core.validate.processor.ValidateCodeProcessorHolder;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,19 +19,13 @@ public class ValidateController {
 
     @GetMapping("/code/{type}")
     public void smsValidateCode(@PathVariable String type, HttpServletRequest request, HttpServletResponse response) {
-        ValidateCodeProcessor processor = findValidateCodeProcessor(type);
+        if (StringUtils.isBlank(type)) {
+            return;
+        }
+        ValidateCodeProcessor processor = validateCodeProcessorHolder.findProcessorByType(type);
         if (processor != null) {
             processor.create(request, response);
         }
-    }
-
-    private ValidateCodeProcessor findValidateCodeProcessor(String type) {
-        for(ValidateCodeEnum validateCodeEnum : ValidateCodeEnum.values()) {
-            if(validateCodeEnum.getType().equals(type)) {
-                return validateCodeProcessorHolder.getProcessorByType(validateCodeEnum);
-            }
-        }
-        return null;
     }
 
 

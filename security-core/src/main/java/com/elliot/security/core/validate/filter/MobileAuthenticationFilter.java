@@ -1,9 +1,9 @@
-package com.elliot.security.core.validate.sms;
+package com.elliot.security.core.validate.filter;
 
 import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.exception.ValidateException;
 import com.elliot.security.core.validate.checker.ValidateCodeChecker;
-import com.elliot.security.core.validate.token.MobileAuthenticationToken;
+import com.elliot.security.core.validate.provider.MobileAuthenticationToken;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.core.Authentication;
@@ -47,7 +47,7 @@ public class MobileAuthenticationFilter extends AbstractAuthenticationProcessing
         if (StringUtils.isBlank(mobile)) {
             throw new ValidateException("手机号不能为空");
         }
-        smsValidateCodeChecker.validate(request, mobile);
+        smsValidateCodeChecker.validate(request, "mobile-" + mobile);
     }
 
     protected void setDetails(HttpServletRequest request, MobileAuthenticationToken authRequest) {

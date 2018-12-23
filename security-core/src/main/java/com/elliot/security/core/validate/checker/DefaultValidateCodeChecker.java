@@ -1,7 +1,7 @@
 package com.elliot.security.core.validate.checker;
 
-import com.elliot.security.core.validate.ValidateCode;
-import com.elliot.security.core.validate.ValidateCodeUtil;
+import com.elliot.security.core.validate.code.ValidateCode;
+import com.elliot.security.core.util.ValidateCodeUtil;
 
 import javax.servlet.http.HttpServletRequest;
 

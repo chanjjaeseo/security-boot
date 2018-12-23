@@ -1,23 +1,27 @@
 package com.elliot.security.core.validate.processor;
 
-import com.elliot.security.core.constant.ValidateCodeEnum;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Iterator;
 import java.util.Map;
 
 @Component
 public class ValidateCodeProcessorHolder {
 
-    private static final String VALIDATE_CODE_PROCESSOR_SUFFIX = "ValidateCodeProcessor";
-
     @Autowired
     private Map<String, ValidateCodeProcessor> holder;
 
-    public ValidateCodeProcessor getProcessorByType(ValidateCodeEnum validateCodeEnum) {
-        String type = validateCodeEnum.getType();
-        String processorName = type + VALIDATE_CODE_PROCESSOR_SUFFIX;
-        return holder.get(processorName);
+    public ValidateCodeProcessor findProcessorByType(String type) {
+        Iterator<Map.Entry<String, ValidateCodeProcessor>> iterable = holder.entrySet().iterator();
+        while (iterable.hasNext()) {
+            Map.Entry<String, ValidateCodeProcessor> entry = iterable.next();
+            if (StringUtils.contains(entry.getKey(), type)) {
+                return entry.getValue();
+            }
+        }
+        return null;
     }
 
 }

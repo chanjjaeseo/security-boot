@@ -1,5 +1,6 @@
 package com.elliot.security.app.authentication;
 
+import com.elliot.security.core.util.JsonUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
@@ -26,9 +27,6 @@ import java.io.IOException;
 public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
-
-    @Autowired
-    private ObjectMapper objectMapper;
 
     @Autowired
     private ClientDetailsService clientDetailsService;
@@ -81,6 +79,8 @@ public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthentica
 
         response.setContentType("application/json;charset=UTF-8");
 
+        ObjectMapper objectMapper = JsonUtil.getObjectMapper();
+
         response.getWriter().write(objectMapper.writeValueAsString(token));
     }
 
@@ -91,7 +91,7 @@ public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthentica
         try {
             decoded = Base64.decode(base64Token);
         } catch (IllegalArgumentException e) {
-            throw new BadCredentialsException("Failed to decode basic authentication token");
+            throw new BadCredentialsException("Failed to decode basic authentication code");
         }
 
         String token = new String(decoded, "UTF-8");
@@ -99,7 +99,7 @@ public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthentica
         int delim = token.indexOf(":");
 
         if (delim == -1) {
-            throw new BadCredentialsException("Invalid basic authentication token");
+            throw new BadCredentialsException("Invalid basic authentication code");
         }
         return new String[] { token.substring(0, delim), token.substring(delim + 1) };
     }

@@ -2,8 +2,8 @@ package com.elliot.security.core.validate.checker;
 
 
 import com.elliot.security.core.exception.ValidateException;
-import com.elliot.security.core.validate.ValidateCode;
-import com.elliot.security.core.validate.ValidateCodeUtil;
+import com.elliot.security.core.validate.code.ValidateCode;
+import com.elliot.security.core.util.ValidateCodeUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.security.core.AuthenticationException;
 
@@ -20,9 +20,6 @@ public abstract class StorageValidateCodeChecker implements ValidateCodeChecker 
 
     @Override
     public void validate(HttpServletRequest request, Object storageId) throws AuthenticationException {
-        if (storageId instanceof String) {
-            throw new ValidateException("storageId 必须是字符串");
-        }
         ValidateCode codeInStorage = getValidateCodeFromStorage(request, (String) storageId);
         String code = ValidateCodeUtil.getValidateCodeFromRequest(request, requestParameter);
         preCheck(codeInStorage, code);

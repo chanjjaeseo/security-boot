@@ -3,7 +3,7 @@ package com.elliot.security.browser.config;
 import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.validate.checker.DefaultValidateCodeChecker;
 import com.elliot.security.core.validate.checker.ValidateCodeChecker;
-import com.elliot.security.core.validate.image.ImageValidateCodeFilter;
+import com.elliot.security.core.validate.filter.ImageValidateCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

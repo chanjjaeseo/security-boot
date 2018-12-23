@@ -2,7 +2,7 @@ package com.elliot.security.core.constant;
 
 public enum ValidateCodeEnum {
 
-    SMS("sms-code", "sms"),
+    SMS("provider-code", "provider"),
     IMAGE("image-code", "image");
 
     private String requestParameter;

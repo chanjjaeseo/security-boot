@@ -38,7 +38,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
         // validate code authentication (form login)
         http.apply(imageCodeAuthenticationConfig);
 
-        // sms code authentication
+        // provider code authentication
         http.apply(smsCodeAuthenticationConfig);
 
         // remember me

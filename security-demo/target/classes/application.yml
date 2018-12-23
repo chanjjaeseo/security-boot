@@ -6,9 +6,27 @@ spring:
    driver-class-name: com.mysql.jdbc.Driver
   session:
     store-type: none
+  redis:
+#    sentinel:
+#      master: 47.107.127.220
+#      nodes:
+    host: 47.107.127.220
+    port: 6379
+    password: qcz0816
+    database: 0
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait:  -1
+      max-idle: 500
+      min-idle: 0
+    cluster:
+      nodes: 47.107.127.220:6380
+      max-redirects: 1
 
 server:
   port: 8090
+
 security:
 #  oauth2:
 #    client:

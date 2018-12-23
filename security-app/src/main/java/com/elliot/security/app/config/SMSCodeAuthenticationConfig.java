@@ -2,11 +2,10 @@ package com.elliot.security.app.config;
 
 import com.elliot.security.core.constant.SecurityConstant;
 import com.elliot.security.core.validate.checker.RedisSMSCodeChecker;
-import com.elliot.security.core.validate.checker.SessionSMSCodeChecker;
-import com.elliot.security.core.validate.checker.ValidateCodeChecker;
-import com.elliot.security.core.validate.sms.MobileAuthenticationFilter;
-import com.elliot.security.core.validate.sms.MobileAuthenticationProvider;
+import com.elliot.security.core.validate.filter.MobileAuthenticationFilter;
+import com.elliot.security.core.validate.provider.MobileAuthenticationProvider;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -29,6 +28,9 @@ public class SMSCodeAuthenticationConfig extends SecurityConfigurerAdapter<Defau
     @Autowired
     private UserDetailsService userDetailsService;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     @Override
     public void configure(HttpSecurity builder) throws Exception {
         MobileAuthenticationFilter mobileAuthenticationFilter = new MobileAuthenticationFilter();
@@ -36,7 +38,8 @@ public class SMSCodeAuthenticationConfig extends SecurityConfigurerAdapter<Defau
         mobileAuthenticationFilter.setAuthenticationSuccessHandler(authenticationSuccessHandler);
         mobileAuthenticationFilter.setAuthenticationFailureHandler(authenticationFailureHandler);
 
-        ValidateCodeChecker smsValidateCodeChecker = new RedisSMSCodeChecker(SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_REQUEST_NAME, "sms_validate_code");
+        RedisSMSCodeChecker smsValidateCodeChecker = new RedisSMSCodeChecker(SecurityConstant.ValidateCode.SMS_VALIDATE_CODE_REQUEST_NAME, "sms_validate_code");
+        smsValidateCodeChecker.setRedisTemplate(redisTemplate);
         mobileAuthenticationFilter.setSmsValidateCodeChecker(smsValidateCodeChecker);
 
         MobileAuthenticationProvider mobileAuthenticationProvider = new MobileAuthenticationProvider();

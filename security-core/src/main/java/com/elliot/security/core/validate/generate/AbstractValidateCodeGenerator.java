@@ -1,10 +1,17 @@
-package com.elliot.security.core.validate.processor;
+package com.elliot.security.core.validate.generate;
 
-import com.elliot.security.core.validate.ValidateCode;
+import com.elliot.security.core.config.bean.SecurityBootBean;
+import com.elliot.security.core.validate.code.ValidateCode;
 
 import java.util.Random;
 
-public abstract class AbstractValidateCodeGenerator{
+public abstract class AbstractValidateCodeGenerator implements CodeGenerator{
+
+    protected SecurityBootBean securityBootBean;
+
+    public AbstractValidateCodeGenerator(SecurityBootBean securityBootBean) {
+        this.securityBootBean = securityBootBean;
+    }
 
     protected String generateCode(int length) {
         Random random = new Random();
@@ -22,6 +29,6 @@ public abstract class AbstractValidateCodeGenerator{
         return buffer.toString();
     }
 
-    protected abstract ValidateCode generate();
+    public abstract ValidateCode generate();
 
 }

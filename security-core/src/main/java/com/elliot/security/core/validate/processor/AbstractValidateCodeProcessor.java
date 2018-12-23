@@ -1,6 +1,7 @@
 package com.elliot.security.core.validate.processor;
 
-import com.elliot.security.core.validate.ValidateCode;
+import com.elliot.security.core.validate.code.ValidateCode;
+import com.elliot.security.core.validate.generate.CodeGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,14 +12,18 @@ public abstract class AbstractValidateCodeProcessor implements ValidateCodeProce
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
+    private CodeGenerator codeGenerator;
+
+    public AbstractValidateCodeProcessor(CodeGenerator codeGenerator) {
+        this.codeGenerator = codeGenerator;
+    }
+
     @Override
     public void create(HttpServletRequest request, HttpServletResponse response) {
-        ValidateCode code = generate();
+        ValidateCode code = codeGenerator.generate();
         save(request, code);
         send(request, response, code);
     }
-
-    protected abstract ValidateCode generate();
 
     protected abstract void save(HttpServletRequest request, ValidateCode validateCode);
 
