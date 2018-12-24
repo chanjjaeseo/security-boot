@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2254593e-ce6b-40dd-9923-978ca3083850" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/JsonUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ImageValidateCode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/SMSValidateCode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/CodeGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/ImageCodeGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/SMSCodeGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionImageCodeProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionSMSCodeProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionValidateCodeProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/config/ClusterConfigurationProperties.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/config/RedisConfig.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/doc/SpringOAuth2-APP.md" afterPath="$PROJECT_DIR$/doc/SpringOAuth2.md" />
-      <change beforePath="$PROJECT_DIR$/doc/SpringSecurity-BROWSER.md" afterPath="$PROJECT_DIR$/doc/SpringSecurity.md" />
-      <change beforePath="$PROJECT_DIR$/security-app/security-app.iml" afterPath="$PROJECT_DIR$/security-app/security-app.iml" />
-      <change beforePath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationFailureHandler.java" afterPath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationFailureHandler.java" />
-      <change beforePath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationSuccessHandler.java" afterPath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationSuccessHandler.java" />
-      <change beforePath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java" afterPath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java" />
-      <change beforePath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/SMSCodeAuthenticationConfig.java" afterPath="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/SMSCodeAuthenticationConfig.java" />
-      <change beforePath="$PROJECT_DIR$/security-browser/security-browser.iml" afterPath="$PROJECT_DIR$/security-browser/security-browser.iml" />
-      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java" />
-      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationSuccessHandler.java" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationSuccessHandler.java" />
-      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/BrowserSecurityConfig.java" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/BrowserSecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/ImageCodeAuthenticationConfig.java" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/ImageCodeAuthenticationConfig.java" />
-      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/pom.xml" afterPath="$PROJECT_DIR$/security-core/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/security-core/security-core.iml" afterPath="$PROJECT_DIR$/security-core/security-core.iml" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/GlobalSecurityConfig.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/GlobalSecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/ValidateCodeEnum.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/ValidateCodeEnum.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCode.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ValidateCode.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeUtil.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/ValidateCodeUtil.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/DefaultValidateCodeChecker.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/DefaultValidateCodeChecker.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/endpoint/ValidateController.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/endpoint/ValidateController.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeFilter.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/ImageValidateCodeFilter.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeGenerator.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/AbstractValidateCodeGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageValidateCodeProcessor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessorHolder.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessorHolder.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationFilter.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/MobileAuthenticationFilter.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationProvider.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationProvider.java" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/token/MobileAuthenticationToken.java" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationToken.java" />
-      <change beforePath="$PROJECT_DIR$/security-demo/security-demo.iml" afterPath="$PROJECT_DIR$/security-demo/security-demo.iml" />
-      <change beforePath="$PROJECT_DIR$/security-demo/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/security-demo/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/security-demo/src/main/resources/resources/signIn.html" afterPath="$PROJECT_DIR$/security-demo/src/main/resources/resources/signIn.html" />
-      <change beforePath="$PROJECT_DIR$/security-demo/target/classes/application.yml" afterPath="$PROJECT_DIR$/security-demo/target/classes/application.yml" />
-      <change beforePath="$PROJECT_DIR$/security-demo/target/classes/resources/signIn.html" afterPath="$PROJECT_DIR$/security-demo/target/classes/resources/signIn.html" />
+      <change beforePath="$PROJECT_DIR$/doc/SpringOAuth2.md" afterPath="$PROJECT_DIR$/doc/SpringOAuth2.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,109 +19,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/security_boot$SMSValidateCodeProcessor.coverage" NAME="SMSValidateCodeProcessor Coverage Results" MODIFIED="1545537540850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.elliot.security.core.validate.processor.*</FILTER>
+    <SUITE FILE_PATH="coverage/security_boot$DemoApplication.coverage" NAME="DemoApplication Coverage Results" MODIFIED="1545096237648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.elliot.security.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/security_boot$DemoApplication.coverage" NAME="DemoApplication Coverage Results" MODIFIED="1545539004435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedisSMSCodeChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/JsonUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding>
-                <element signature="e#1883#1884#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SMSValidateCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/SMSValidateCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageValidateCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ImageValidateCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringSecurity.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doc/SpringSecurity.md">
+      <file leaf-file-name="SpringOAuth2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doc/SpringOAuth2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="110">
-                <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <first_editor relative-caret-position="2136">
+                <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="105" selection-end-column="30" />
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidateCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ValidateCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StorageValidateCodeChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidateCodeUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/ValidateCodeUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MobileAuthenticationToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -180,6 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -189,10 +55,16 @@
       <find>ResourceServerConfig</find>
       <find>dasdsadasdddddddddddddddddddddddddddddddd</find>
       <find>Using default security password</find>
-      <find>storageId 必须是字符串</find>
-      <find>objectMapper</find>
-      <find>验证码已</find>
-      <find>验证码不匹配</find>
+      <find>tokenRequest</find>
+      <find>InvalidRequestException, An authorization code must be supplied</find>
+      <find>InvalidRequestException, An authorization code must be supplied.</find>
+      <find>InvalidRequestException, An authorization code must</find>
+      <find>O</find>
+      <find>supports</find>
+      <find>retrieveUser</find>
+      <find>authoritiesMapper</find>
+      <find>additionalAuthenticationChecks</find>
+      <find>UsernamePassword</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,57 +78,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/exception/UsernameNotFoundException.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/DemoUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/DemoApplication.java" />
-        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/oauth/AuthorizationServerConfig.java" />
-        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/DefaultAuthenticationFailureHandler.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/AbstractValidateCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/FormAuthenticationConfig.java" />
-        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/DefaultAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/AbstractValidateCodeChecker.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SMSValidateCodeChecker.java" />
-        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java" />
-        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeFilter.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java" />
-        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/SMSCodeAuthenticationConfig.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/config/ClusterConfigurationProperties.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/security-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/SMSCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/ImageCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/CodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/AbstractValidateCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionImageCodeProccessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessorHolder.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/endpoint/ValidateController.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ImageValidateCode.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/CacheValidateCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionValidateCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionSMSCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/MobileAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/GlobalSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/ImageCodeAuthenticationConfig.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileUser.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/CacheValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/StrorageValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/SessionValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/AbstractValidateCodeGenerator.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/StorageValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/SMSValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeGenerator.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessor.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/SecurityConstant.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/DateTimeUtil.java" />
-        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCode.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/SMSValidateCode.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/WebUtil.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/token/MobileAuthenticationToken.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java" />
+        <option value="$PROJECT_DIR$/security-demo/src/main/resources/resources/signIn.html" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/SMSValidateCode.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/SMSCodeAuthenticationConfig.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationProvider.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeUtil.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/ValidateCodeUtil.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationToken.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ImageValidateCode.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeProcessor.java" />
+        <option value="$PROJECT_DIR$/security-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/SMSValidateCodeProcessor.java" />
+        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/ImageCodeAuthenticationConfig.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/validate/SMSValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/validate/SessionValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/bean/ImageCode.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/bean/SMSCode.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/BrowserSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/validate/RedisValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/validate/SessionSMSCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/validate/SMSValidateCodeCheck.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/validate/SessionImageCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionImageCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageValidateCodeProcessor.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SMSValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ImageValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCode.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeFilter.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/ImageCodeAuthenticationConfig.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionValidateCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java" />
+        <option value="$PROJECT_DIR$/doc/SpringOAuth2.md" />
       </list>
     </option>
   </component>
@@ -268,14 +140,29 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="security-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="security-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="security-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="804" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -294,7 +181,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,59 +194,12 @@
               <item name="security-boot" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-oauth2-2.0.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-oauth2-2.0.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-oauth2-2.0.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth2" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-oauth2-2.0.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth2" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-oauth2-2.0.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth2" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,20 +210,24 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/elliot/Documents/gofun/security-boot/security-core/src/main/java/com/elliot/security/core/util/JsonUtil.java" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.elliot.security.core.validate.checker" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config" />
+      <recent name="D:\Repository\security-boot\security-browser\src\main\java\com\elliot\security\browser" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -401,15 +245,31 @@
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/security-app.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationFailureHandler.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationSuccessHandler.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/security-browser.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationSuccessHandler.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/BrowserSecurityConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/bean/ImageCode.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/bean/SMSCode.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/SecurityConstant.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCode.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/ImageCodeAuthenticationConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/security-core.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/GlobalSecurityConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/ValidateCodeEnum.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/endpoint/ValidateController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessorHolder.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/security-demo.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/src/main/resources/application.yml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/src/main/resources/resources/signIn.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/target/classes/application.yml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/target/classes/resources/signIn.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -418,36 +278,28 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/App.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/Browser.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringOAuth2-APP.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringSecurity-BROWSER.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationFailureHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationSuccessHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/AuthorizationServerConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationSuccessHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/ImageCodeAuthenticationConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeUtil.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionValidateCodeChecker.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ValidateCodeChecker.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCode.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeFilter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeGenerator.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessorHolder.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationFilter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationProvider.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/SMSValidateCode.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/token/MobileAuthenticationToken.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringOAuth2.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringSecurity.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/SMSCodeAuthenticationConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/JsonUtil.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/ValidateCodeUtil.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/DefaultValidateCodeChecker.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ImageValidateCode.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/SMSValidateCode.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ValidateCode.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/ImageValidateCodeFilter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/MobileAuthenticationFilter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/AbstractValidateCodeGenerator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/CodeGenerator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/ImageCodeGenerator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/SMSCodeGenerator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionImageCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionSMSCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionValidateCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationProvider.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationToken.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/config/ClusterConfigurationProperties.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/config/RedisConfig.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -455,24 +307,17 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringOAuth2.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringSecurity.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/DefaultAuthenticationFailureHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/DefaultAuthenticationSuccessHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/RequestAuthenticationConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/oauth/AuthorizationServerConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/oauth/ResourceServerConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/DefaultAuthenticationFailureHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/DefaultAuthenticationSuccessHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/ValidateCodeAuthenticationConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/AbstractValidateCodeGenerator.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/AbstractValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeProcessorHolder.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/ValidateCodeFilter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/ImageValidateCode.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/SMSValidateCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringOAuth2-APP.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/doc/SpringSecurity-BROWSER.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCode.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeUtil.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionValidateCodeChecker.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeFilter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeGenerator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageValidateCodeProcessor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationFilter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationProvider.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/token/MobileAuthenticationToken.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -566,7 +411,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="Application.DemoApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -577,7 +422,7 @@
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.elliot.security.*" />
+          <option name="PATTERN" value="com.elliot.security.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -593,44 +438,6 @@
       <module name="security-demo" />
       <envs />
     </configuration>
-    <configuration name="RedisSMSCodeChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.elliot.security.core.validate.checker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.elliot.security.core.validate.checker.RedisSMSCodeChecker" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="security-core" />
-      <envs />
-    </configuration>
-    <configuration name="SMSValidateCodeProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.elliot.security.core.validate.processor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.elliot.security.core.validate.processor.SMSValidateCodeProcessor" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="security-core" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -644,6 +451,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="SecurityBeanTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.elliot.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="security-demo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.elliot.security" />
+      <option name="MAIN_CLASS_NAME" value="com.elliot.security.SecurityBeanTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -711,17 +543,15 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.DemoApplication" />
       <item index="1" class="java.lang.String" itemvalue="Application.DemoApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Application.RedisSMSCodeChecker" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SMSValidateCodeProcessor" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SecurityBeanTest.test" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.RedisSMSCodeChecker" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SMSValidateCodeProcessor" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DemoApplication" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SecurityBeanTest.test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DemoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -741,6 +571,7 @@
       <workItem from="1545017992896" duration="19009000" />
       <workItem from="1545050683904" duration="2117000" />
       <workItem from="1545055293580" duration="1812000" />
+      <workItem from="1545616241089" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1545038513243</created>
@@ -757,206 +588,485 @@
       <updated>1545040547431</updated>
     </task>
     <task id="LOCAL-00003" summary="commit">
-      <created>1545231453495</created>
+      <created>1545102701712</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1545231453495</updated>
+      <updated>1545102701712</updated>
     </task>
     <task id="LOCAL-00004" summary="commit">
-      <created>1545396408824</created>
+      <created>1545105699693</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1545396408824</updated>
+      <updated>1545105699693</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1545114883826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545114883826</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit">
+      <created>1545129359453</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545129359453</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit">
+      <created>1545191997903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545191997903</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit">
+      <created>1545209877492</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545209877492</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit">
+      <created>1545211185398</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545211185398</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit">
+      <created>1545216769532</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545216769532</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit">
+      <created>1545290546751</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545290546751</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit">
+      <created>1545295862247</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545295862247</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit">
+      <created>1545300378162</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545300378162</updated>
+    </task>
+    <task id="LOCAL-00014" summary="commit">
+      <created>1545302737140</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545302737140</updated>
+    </task>
+    <task id="LOCAL-00015" summary="refactor">
+      <created>1545363913230</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545363913230</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix">
+      <created>1545373358499</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1545373358499</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix">
+      <created>1545375921682</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545375921682</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix">
+      <created>1545378222159</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1545378222159</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix">
+      <created>1545388131105</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1545388131105</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 13m 25s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 14m 47s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 16m 49s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 17m 17s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 18m 22s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 18m 48s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 28m 54s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 31m 01s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 34m 04s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityBeanTest_test - 2018.12.18 at 16h 35m 15s.xml">
+      <configuration name="SecurityBeanTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50383000" />
+    <option name="totallyTimeSpent" value="133270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="804" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47108603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32722145" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1663113" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3304721" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28411514" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="18" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_WIDTH">
+                <map>
+                  <entry key="3" value="108" />
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE.jar!/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.class</url>
-          <line>54</line>
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE.jar!/org/springframework/security/oauth2/provider/client/ClientCredentialsTokenGranter.class</url>
+          <line>34</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE.jar!/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.class</url>
-          <line>66</line>
+          <line>93</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE.jar!/org/springframework/security/oauth2/provider/token/AbstractTokenGranter.class</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE.jar!/org/springframework/security/oauth2/provider/token/AbstractTokenGranter.class</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE.jar!/org/springframework/security/oauth2/provider/token/AbstractTokenGranter.class</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="47" />
+      <option name="time" value="67" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="http.configurers.entrySet().toArray()[9]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="setValue">
-      <expression>
-        <expression-string>&quot;uy37w7&quot;</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>codeInSession</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/ImageCodeGenerator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="33" column="123" lean-forward="false" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.2.3.RELEASE/spring-cloud-context-1.2.3.RELEASE.jar!/org/springframework/cloud/bootstrap/encrypt/EncryptionBootstrapConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.6.RELEASE/spring-boot-1.5.6.RELEASE.jar!/org/springframework/boot/context/properties/ConfigurationBeanFactoryMetaData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/WebUtil.java" />
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/ValidateCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#462#463#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/AbstractValidateCodeGenerator.java">
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/elliot/security/service/DemoUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="251">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/SMSCodeGenerator.java">
+    <entry file="file://$PROJECT_DIR$/security-demo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/generate/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="336">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessor.java">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/endpoint/ValidateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="48">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java">
+    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/AuthorizationServerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#599#600#0" expanded="false" />
-            <element signature="e#649#650#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageCodeProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="-469">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSCodeProcessor.java">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/SecurityConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="-13">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor">
+    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="57" column="76" lean-forward="true" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/resources/resources/signIn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="46" column="51" lean-forward="false" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/bean/SMSCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/bean/ImageCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/SpringOAuth2-APP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2568">
+            <caret line="107" column="12" lean-forward="false" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/SpringSecurity-BROWSER.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/Browser.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/App.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/RepositoryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.elliot.security.browser.validate.SMSValidateCodeChecker">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement>com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor</OriginalElement>
+          <OriginalElement>com.elliot.security.browser.validate.SMSValidateCodeChecker</OriginalElement>
           <nodes>
-            <node x="" y="">org.springframework.stereotype.Component</node>
-            <node x="" y="">com.elliot.security.core.validate.processor.SessionImageCodeProccessor</node>
-            <node x="" y="">com.elliot.security.core.validate.processor.ValidateCodeProcessor</node>
-            <node x="" y="">com.elliot.security.core.validate.processor.AbstractValidateCodeProcessor</node>
-            <node x="" y="">com.elliot.security.core.validate.processor.ValidateCodeProcessorHolder</node>
-            <node x="" y="">com.elliot.security.core.validate.processor.SessionSMSCodeProcessor</node>
-            <node x="" y="">com.elliot.security.core.validate.processor.SessionValidateCodeProcessor</node>
+            <node x="" y="">com.elliot.security.browser.validate.SMSValidateCodeChecker</node>
+            <node x="" y="">com.elliot.security.core.validate.checker.ValidateCodeChecker</node>
+            <node x="" y="">com.elliot.security.core.validate.checker.StorageValidateCodeChecker</node>
+            <node x="" y="">com.elliot.security.browser.validate.SessionValidateCodeChecker</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="235.0" y="209.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="110.0" y="135.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -964,714 +1074,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Map.java">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/AbstractValidateCodeProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="359" column="23" lean-forward="false" selection-start-line="359" selection-start-column="8" selection-end-line="359" selection-end-column="23" />
+        <state relative-caret-position="144">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ValidateCodeProcessorHolder.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/core/HashOperations.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/endpoint/ValidateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/ImageValidateCodeFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionImageCodeProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionValidateCodeProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SessionSMSCodeProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/config/GlobalSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-demo/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/SMSCodeAuthenticationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/AuthorizationServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/config/ResourceServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/constant/SecurityConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1545447709792" expanded="true" signature="783:792" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ValidateCodeChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar!/org/codehaus/jackson/map/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="640" column="19" lean-forward="false" selection-start-line="640" selection-start-column="19" selection-end-line="640" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar!/org/codehaus/jackson/map/type/SimpleType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar!/org/codehaus/jackson/type/JavaType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <marker date="1527975746162" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1527975746162" expanded="true" signature="412:583" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="759:820" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="876:954" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="960:978" ph="/**...*/" />
-            <marker date="1527975746162" expanded="true" signature="1037:1391" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="1441:1975" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="2031:2508" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="2559:2762" ph="{...}" />
-            <marker date="1527975746162" expanded="false" signature="2871:2882" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="2914:2920" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3086:3097" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3116:3122" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3174:3185" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3211:3217" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3250:3261" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3316:3322" ph=" }" />
-            <marker date="1527975746162" expanded="true" signature="3356:3540" ph="{...}" />
-            <marker date="1527975746162" expanded="false" signature="3574:3585" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3638:3644" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3678:3689" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3702:3708" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3747:3758" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3786:3792" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3832:3843" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3876:3882" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="3922:3933" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="3966:3972" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4008:4019" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4071:4077" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4168:4179" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4192:4198" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4234:4245" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4258:4264" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4302:4313" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4350:4356" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4390:4401" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4413:4419" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4457:4468" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4480:4486" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4523:4534" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4543:4549" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4595:4606" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4618:4624" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4672:4683" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4695:4701" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4737:4748" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4774:4780" ph=" }" />
-            <marker date="1527975746162" expanded="false" signature="4815:4826" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="4851:4857" ph=" }" />
-            <marker date="1527975746162" expanded="true" signature="4942:5067" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="5184:5308" ph="{...}" />
-            <marker date="1527975746162" expanded="true" signature="5460:5662" ph="{...}" />
-            <marker date="1527975746162" expanded="false" signature="5785:5796" ph=" { " />
-            <marker date="1527975746162" expanded="false" signature="5818:5824" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1104" column="17" lean-forward="false" selection-start-line="1104" selection-start-column="17" selection-end-line="1104" selection-end-column="17" />
-          <folding>
-            <marker date="1545050735456" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1545050735456" expanded="false" signature="154:5735" ph="..." />
-            <marker date="1545050735456" expanded="true" signature="6985:7095" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="7137:7232" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="7279:8475" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="8581:10304" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="10364:10375" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="10411:10417" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="10450:10548" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="10601:10823" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="10892:10903" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="10941:10947" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="11115:11221" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="11288:11299" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="11337:11343" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="11432:11494" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="11599:11667" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="11697:11708" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="11738:11744" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="11800:19143" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="12670:19082" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="12725:12752" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="12787:12809" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="12874:12901" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="12926:12948" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="13005:13032" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="13070:13092" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="13155:13182" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="13220:13242" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="13314:13341" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="13379:13401" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="13471:13498" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="13536:13558" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="13615:13642" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="13680:13702" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="13798:13884" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="13983:14069" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="14150:14244" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="14312:14587" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="14661:14939" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="15036:15315" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="15379:15532" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="15599:15755" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="15848:16005" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="16094:16373" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="16446:16656" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="16746:17028" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="17105:17360" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="17450:17765" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="17855:18170" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="18239:18266" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="18311:18333" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="18407:18500" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="18593:18689" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="18795:18881" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="18964:19064" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="19204:19434" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="19502:19702" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="19748:19759" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="19797:19803" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="19873:20210" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="20328:20861" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="20604:20694" ph="run() → {" />
-            <marker date="1545050735456" expanded="false" signature="20824:20843" ph="}" />
-            <marker date="1545050735456" expanded="false" signature="20911:20922" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="20975:20981" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="21038:21049" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="21082:21088" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="21149:21160" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="21195:21201" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="21264:21275" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="21311:21317" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="21385:21450" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="21503:21514" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="21545:21551" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="21628:21694" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="21749:21760" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="21792:21798" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="21862:21937" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="22011:22095" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="22169:22259" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="22326:22694" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="22747:22758" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="22801:22807" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="22836:22847" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="22879:22885" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="22891:22909" ph="/**...*/" />
-            <marker date="1545050735456" expanded="false" signature="22999:23010" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="23039:23045" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="23051:23069" ph="/**...*/" />
-            <marker date="1545050735456" expanded="false" signature="23166:23177" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="23212:23218" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="23275:23354" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="23360:23378" ph="/**...*/" />
-            <marker date="1545050735456" expanded="false" signature="23456:23467" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="23490:23496" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="23561:23737" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="23828:24062" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="24111:24122" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="24151:24157" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="24223:24438" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="24517:24693" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="24822:25020" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="25098:25272" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="25336:25413" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="25479:25587" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="25646:25765" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="25833:25953" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="26001:26101" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="26179:26250" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="26352:26811" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="26930:27260" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="27308:27319" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="27375:27381" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="27454:27636" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="27688:27699" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="27751:27757" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="27811:27822" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="27872:27878" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="27943:28017" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="28058:28069" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="28094:28100" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="28156:28361" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="28404:28415" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="28457:28463" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="28508:28519" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="28571:28577" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="28637:28740" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="28810:28920" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="28969:29088" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="29154:29228" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="29234:29252" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="29327:29425" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="29500:29619" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="29679:29853" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="29917:29989" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="30026:30037" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="30062:30068" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="30074:30092" ph="/**...*/" />
-            <marker date="1545050735456" expanded="false" signature="30148:30159" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="30184:30190" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="30253:30445" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="30484:30495" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="30544:30550" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="30617:30793" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="30874:30953" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="31004:31015" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="31045:31051" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="31097:31271" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="31322:31498" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="31545:31556" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="31602:31608" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="31676:32030" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="32083:32257" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="32311:32491" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="32545:32556" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="32602:32608" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="32683:32829" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="32886:32985" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="33073:33179" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="33237:33339" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="33428:33537" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="33593:33604" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="33652:33658" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="33735:33887" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="33952:34061" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="34153:34263" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="34329:34441" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="34534:34647" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="34727:34810" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="34910:34985" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="35077:35382" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="35475:35781" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="35864:35945" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="36048:36123" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="36218:36529" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="36625:36937" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="36978:36989" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="37027:37033" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="37157:37276" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="37411:37533" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="37667:37763" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="37887:37973" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="38076:38520" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="38649:38712" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="38837:39165" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="39290:39376" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="39512:39601" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="39692:39867" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="39952:40126" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="40217:40397" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="40488:40668" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="40754:40931" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="41018:41197" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="41323:41960" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="42071:42334" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="42445:42708" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="42750:42761" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="42826:42832" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="42872:42883" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="42947:42953" ph=" }" />
-            <marker date="1545050735456" expanded="false" signature="43001:43012" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="43063:43069" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="43163:43893" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="43991:44678" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="44727:44852" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="44935:45044" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="45095:45256" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="45341:45486" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="45606:45732" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="45860:45989" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="46109:46202" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="46321:46447" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="46574:46703" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="46822:46915" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="47041:47171" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="47305:47438" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="47564:47661" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="47783:47909" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="48039:48168" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="48290:48383" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="48510:48636" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="48771:48900" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="49027:49120" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="49242:49368" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="49511:49650" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="49780:49909" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="50060:50202" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="50324:50417" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="50560:50666" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="50749:50875" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="50958:51051" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="51177:51292" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="51419:51527" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="51605:51713" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="51832:51919" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="52003:52430" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="52513:53003" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="53037:53048" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="53102:53108" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="53171:53255" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="53347:53436" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="53483:53494" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="53557:53563" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="53632:53730" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="53785:53945" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="54008:54168" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="54223:54324" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="54375:54553" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="54612:54777" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="54841:54939" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="54993:55111" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="55173:55263" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="55322:55406" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="55464:55546" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="55552:55570" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="55645:55805" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="55811:55829" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="55912:56072" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="56078:56096" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="56171:56272" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="56307:56408" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="56473:56559" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="56655:56746" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="56812:57026" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="57077:57213" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="57264:57433" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="57492:57661" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="57712:57723" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="57787:57793" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="57847:58021" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="58089:58229" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="58285:58372" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="58434:58526" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="58584:58668" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="58674:58692" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="58755:58891" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="58897:58915" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="58978:59147" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="59153:59171" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="59242:59411" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="59515:59636" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="59751:59852" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="59956:60044" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="60148:61916" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="61922:61940" ph="/**...*/" />
-            <marker date="1545050735456" expanded="true" signature="62038:62139" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="62258:62351" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="62470:62713" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="62803:62899" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="62997:63530" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="63655:64046" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="64167:64598" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="64714:64813" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="64927:65787" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="65881:67543" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="67618:67940" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="68128:69422" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="69562:70082" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="70142:70400" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="70413:70755" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="70863:72742" ph="{...}" />
-            <marker date="1545050735456" expanded="false" signature="71058:71073" ph=" { " />
-            <marker date="1545050735456" expanded="false" signature="71094:71104" ph=" }" />
-            <marker date="1545050735456" expanded="true" signature="71241:71363" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="71494:71614" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="71662:72736" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="72781:72944" ph="{...}" />
-            <marker date="1545050735456" expanded="true" signature="72927:72938" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24759">
-          <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.5/jackson-datatype-jsr310-2.9.5.jar!/com/fasterxml/jackson/datatype/jsr310/deser/LocalDateTimeDeserializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/authentication/BrowserAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="144">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/authentication/AppAuthenticationSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-541">
-          <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+        <state relative-caret-position="240">
+          <caret line="30" column="38" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.jar!/com/fasterxml/jackson/core/JsonParser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="78" column="27" lean-forward="false" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+        <state relative-caret-position="144">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.jar!/com/fasterxml/jackson/core/ObjectCodec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/validate/RedisValidateCodeChecker.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/TypeReference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/validate/SMSValidateCodeChecker.java" />
+    <entry file="file://$PROJECT_DIR$/security-app/src/main/java/com/elliot/security/app/validate/SMSValidateCodeCheck.java" />
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/BrowserSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/filter/MobileAuthenticationFilter.java">
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/SMSCodeAuthenticationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        <state relative-caret-position="48">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/deser/BeanDeserializer.class">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ImageValidateCodeChecker.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/JsonMappingException.class">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.class">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ValidateCodeChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="745" column="0" lean-forward="false" selection-start-line="745" selection-start-column="0" selection-end-line="745" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/elliot/security/browser/config/ImageCodeAuthenticationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/image/ImageValidateCodeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/ImageValidateCodeProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1707">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/processor/SMSValidateCodeProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="49" column="62" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
+        <state relative-caret-position="-603">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/DeserializationContext.class">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/sms/MobileAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="661" column="0" lean-forward="false" selection-start-line="661" selection-start-column="0" selection-end-line="661" selection-end-column="0" />
+        <state relative-caret-position="-552">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/TypeReference.class">
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/ImageValidateCodeChecker.java" />
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionSMSCodeChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="24">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SMSValidateCodeChecker.java" />
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/SessionValidateCodeChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#575#576#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/RedisSMSCodeChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/checker/StorageValidateCodeChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/util/ValidateCodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/provider/MobileAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ValidateCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/SMSValidateCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/elliot/security/core/validate/code/ImageValidateCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/SpringSecurity.md">
+    <entry file="file://$PROJECT_DIR$/doc/SpringOAuth2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="110">
-            <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <first_editor relative-caret-position="2136">
+            <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="105" selection-end-column="30" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1730,7 +1315,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>security-browser</last-edited>
+          <last-edited>security-demo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

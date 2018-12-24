@@ -46,7 +46,7 @@ grant_type=authorization_code
 &code=[authorizecode]&client_id=[yourclientid]
 &client_secret=[yourclientsecret]&redirect_uri=[yourappuri]
 
-获取到响应
+获取到响应 (这里的access_token是随机生成的UUID)
 ```
 {
     "access_token": "da019a23-ed8d-4eef-9b45-8b0ac88d9427",
@@ -69,7 +69,7 @@ grant_type=authorization_code
 ---------------------------------------------------
 在表单登陆中，我们在web浏览器中采用表单登陆，经过Spring Security认证成功后，认证信息会放到session中。
 
-而在APP中是不存在Session这个概念的，所以我们直接采用发放基于JWT形式的AccessToken就OK。
+而在APP中是不存在Session这个概念的，所以我们直接采用发放AccessToken就OK。
 
 这里有两种方式:
 
@@ -81,7 +81,7 @@ grant_type=authorization_code
 
 向认证端点(默认为/login/form)发送包含用户名(username)密码(password)的POST请求，验证成功后，发放AccessToken。
 
-注意我们这里需要验证 client的信息，所以请求头中要携带clientId和clientScret。按照如下设置:
+注意我们这里需要验证 client的信息，所以请求头中要携带clientId和clientSecret。按照如下设置:
 
 ```
     Content-Type  | application/json;charset=UTF-8
