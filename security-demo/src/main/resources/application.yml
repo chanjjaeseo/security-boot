@@ -11,7 +11,7 @@ spring:
 #      master: 47.107.127.220
 #      nodes:
     host: 47.107.127.220
-    port: 6379
+    port: 6380
     password: qcz0816
     database: 0
     timeout: 0
@@ -20,9 +20,9 @@ spring:
       max-wait:  -1
       max-idle: 500
       min-idle: 0
-    cluster:
-      nodes: 47.107.127.220:6380
-      max-redirects: 1
+#    cluster:
+#      nodes: 47.107.127.220:6379
+#      max-redirects: 1
 
 server:
   port: 8090

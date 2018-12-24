@@ -22,37 +22,6 @@ import java.util.Set;
 @Configuration
 public class RedisConfig {
 
-//    @Value("${spring.redis.sentinel.master}")
-//    private String sentinelMasterName = null;
-//
-//    @Value("${spring.redis.sentinel.nodes}")
-//    private String hostAndPorts = null;
-//
-//    public String getSentinelMasterName() {
-//        return sentinelMasterName;
-//    }
-//
-//    public void setSentinelMasterName(String sentinelMasterName) {
-//        this.sentinelMasterName = sentinelMasterName;
-//    }
-//
-//    public String getHostAndPorts() {
-//        return hostAndPorts;
-//    }
-//
-//    public void setHostAndPorts(String hostAndPorts) {
-//        this.hostAndPorts = hostAndPorts;
-//    }
-
-//    @Primary
-//    @Bean("masterFactory")
-//    @ConfigurationProperties("spring.redis")
-//    public JedisConnectionFactory redisConnection(@Qualifier("redisPool") JedisPoolConfig poolConfig) {
-//        Set<String> sentinelHostAndPorts = StringUtils.commaDelimitedListToSet(this.getHostAndPorts());
-//        RedisSentinelConfiguration sc = new RedisSentinelConfiguration(this.getSentinelMasterName(),
-//                sentinelHostAndPorts);
-//        return new JedisConnectionFactory(sc, poolConfig);
-//    }
 
     @Value("${spring.redis.host}")
     private String redisHost;
@@ -61,8 +30,11 @@ public class RedisConfig {
     @Bean("masterFactory")
     @ConfigurationProperties("spring.redis")
     public JedisConnectionFactory redisConnection(@Qualifier("redisPool") JedisPoolConfig poolConfig) {
+//        RedisClusterConfiguration redisClusterConfiguration = new RedisClusterConfiguration(clusterProperties.getNodes());
+//        JedisConnectionFactory connectionFactory = new JedisConnectionFactory(redisClusterConfiguration, poolConfig);
         JedisConnectionFactory connectionFactory = new JedisConnectionFactory(poolConfig);
         connectionFactory.setHostName(redisHost);
+//        connectionFactory.set
         return connectionFactory;
     }
 
@@ -71,12 +43,6 @@ public class RedisConfig {
      */
     @Autowired
     ClusterConfigurationProperties clusterProperties;
-
-//    public @Bean("clusterFactory") RedisConnectionFactory connectionFactory() {
-//
-//        return new JedisConnectionFactory(
-//                new RedisClusterConfiguration(clusterProperties.getNodes()));
-//    }
 
     @Bean("redisPool")
     @ConfigurationProperties(prefix = "spring.redis.pool")
