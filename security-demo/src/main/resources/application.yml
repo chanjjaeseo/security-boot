@@ -42,4 +42,7 @@ management:
 boot:
   browser:
     token-validity-seconds: 72000
+  app:
+    oauth2:
+      token-store: jwt
 

@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class RedisSMSCodeChecker extends StorageValidateCodeChecker {
 
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
 
     private String redisHashKey;
 
@@ -35,6 +35,7 @@ public class RedisSMSCodeChecker extends StorageValidateCodeChecker {
     @Override
     protected SMSValidateCode getValidateCodeFromStorage(HttpServletRequest request, String storageId) {
         String content = (String) redisTemplate.opsForHash().get(redisHashKey, storageId);
+        redisTemplate.opsForHash().delete(redisHashKey, storageId);
         SMSValidateCode code = null;
         try {
             ObjectMapper objectMapper = JsonUtil.getObjectMapper();
@@ -43,17 +44,6 @@ public class RedisSMSCodeChecker extends StorageValidateCodeChecker {
             //
         }
         return code;
-    }
-
-    public static void main(String[] args) throws IOException {
-        String content = "{\"code\":\"184628\",\"invalidTime\":\"2018:12:23 12:26:53\",\"mobile\":\"13047187816\"}";
-        ObjectMapper objectMapper = JsonUtil.getObjectMapper();
-        SMSValidateCode code = objectMapper.readValue(content, SMSValidateCode.class);
-        System.out.println(code);
-//        String content;
-//        System.out.println(content = objectMapper.writeValueAsString(LocalDateTime.now()));
-//        LocalDateTime localDateTime = objectMapper.readValue(content, LocalDateTime.class);
-//        System.out.println(localDateTime);
     }
 
     public RedisTemplate getRedisTemplate() {
